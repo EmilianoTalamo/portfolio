@@ -2,7 +2,7 @@ var projects;
 var linksContainer = document.getElementById("linksContainer");
 
 
-fetch("../scripts/projects.json") // Read projects JSON
+fetch("https://raw.githubusercontent.com/EmilianoTalamo/portfolio/master/scripts/projects.json") // Read projects JSON
 .then(
 	response => {
 		return response.json(); // Get JSON
