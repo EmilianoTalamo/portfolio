@@ -66,8 +66,8 @@ function projectClicked() {
 		let galleryItem = gallery.appendChild(document.createElement("li"));
 		let galleryLink = galleryItem.appendChild(document.createElement("a"));
 		galleryLink.className = "gallery";
-		galleryLink.href = "../res/gallery/" + projects[index].folder + "/" + i + ".jpg";
-		galleryLink.appendChild(document.createElement("img")).src = "../res/gallery/" + projects[index].folder + "/" + i + "-thumb.jpg";
+		galleryLink.href = "./res/gallery/" + projects[index].folder + "/" + i + ".jpg";
+		galleryLink.appendChild(document.createElement("img")).src = "./res/gallery/" + projects[index].folder + "/" + i + "-thumb.jpg";
 	}
 	new LuminousGallery(document.querySelectorAll(".gallery"), options, options);
 	// Links
