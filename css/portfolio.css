@@ -61,7 +61,7 @@ header ul li a:hover{
 
 @media (max-width: 1024px){
 	header{
-		width: 100vw;
+		width: 100%;
 		max-width: initial;
 		padding: 3rem 1.5rem 0;
 		color: rgba(0,0,0,0.85);
@@ -108,8 +108,8 @@ main ul li a{
 	transition: box-shadow 100ms linear, transform 100ms linear;
 }
 main ul li a:hover{
-	box-shadow: 5px 6px 0 rgba(0,0,0,0.25);
-	transform: translate(-1px, -1px);
+	box-shadow: 6px 5px 0 rgba(0,0,0,0.25);
+	/* transform: translate(-1px, -1px); */
 	opacity: 0.8;
 	transition: box-shadow 66ms linear, transform 100ms linear;
 	cursor: pointer;
@@ -249,6 +249,9 @@ article p{
 	width: 30.3%;
 	border: 1px solid rgba(0,0,0,0.1);
 	padding: 4px;
+}
+#galleryThumbs li:hover{
+	border: 1px solid rgba(0,0,0,.2);
 }
 #galleryThumbs li:not(:last-child){
 	margin-right: 24px;
