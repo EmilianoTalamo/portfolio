@@ -109,7 +109,6 @@ main ul li a{
 }
 main ul li a:hover{
 	box-shadow: 6px 5px 0 rgba(0,0,0,0.25);
-	/* transform: translate(-1px, -1px); */
 	opacity: 0.8;
 	transition: box-shadow 66ms linear, transform 100ms linear;
 	cursor: pointer;
@@ -249,6 +248,7 @@ article p{
 	width: 30.3%;
 	border: 1px solid rgba(0,0,0,0.1);
 	padding: 4px;
+	line-height: 1;
 }
 #galleryThumbs li:hover{
 	border: 1px solid rgba(0,0,0,.2);
@@ -261,6 +261,7 @@ article p{
 	opacity: 0.9;
 	filter: saturate(0.8);
 	transition: opacity 200ms, filter 200ms;
+	line-height: 1;
 }
 #galleryThumbs li img:hover{
 	opacity: 1;

@@ -2,7 +2,7 @@ var projects;
 var linksContainer = document.getElementById("linksContainer");
 
 
-fetch("https://raw.githubusercontent.com/EmilianoTalamo/portfolio/master/scripts/projects.json") // Read projects JSON
+fetch("./scripts/projects.json") // Read projects JSON
 .then(
 	response => {
 		return response.json(); // Get JSON
@@ -63,6 +63,7 @@ function projectClicked() {
 	let gallery = content.appendChild(document.createElement("ul"));
 	gallery.id = "galleryThumbs";
 	for(let i=1 ; i<=projects[index].ssqt ; i++ ) {
+		console.log(i, projects[index]);
 		let galleryItem = gallery.appendChild(document.createElement("li"));
 		let galleryLink = galleryItem.appendChild(document.createElement("a"));
 		galleryLink.className = "gallery";
