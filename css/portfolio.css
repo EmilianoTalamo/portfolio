@@ -220,11 +220,17 @@ article p > br{
 		max-width: initial;
 		overflow-y: scroll;
 		height: 100vh;
-		padding: 3rem 1rem 6rem;
+		padding: 4rem 12vw 6rem;
 	}
 
 	article p{
+		color: rgba(0,0,0,0.8);
 		font-size: 1.2em;
+		line-height: 1.5;
+		font-weight: 300;
+	}
+	article p > br{
+		line-height: 1.8;
 	}
 
 	#close{
@@ -276,10 +282,12 @@ article p > br{
 @media (max-width: 1024px){
 	#galleryThumbs li{
 		margin-bottom: .33rem;
-		width: 32%;
+		width: 44%;
+		justify-content: space-between;
+		flex-wrap: wrap;
 	}
-	#galleryThumbs li:not(:last-child){
-		margin-right: .33rem;
+	#galleryThumbs li{
+		margin: 0;
 	}
 	#galleryThumbs li img{
 		opacity: 1;
@@ -294,7 +302,6 @@ article p > br{
 /* Buttons */
 
 #links a{
-	/* border: 2px solid black; */
 	border-radius: 8px;
 	padding: 12px 28px 12px 24px;
 	line-height: 1;
@@ -332,8 +339,12 @@ article p > br{
 }
 
 @media (max-width: 1024px){
+	div#links{
+		display: flex;
+	}
 	#links a{
-		width: 45%;
-		font-size: 1.1rem;
+		padding: 12px 18px 12px 14px;
+		width: 50%;
+		font-size: 1rem;
 	}
 }
