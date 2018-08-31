@@ -100,6 +100,7 @@ function closeProject() {
 
 // Gallery
 var options = {
+	appendToSelector: "#projectInfo",
 	closeWithEscape: true,
 	closeOnScroll: true,
 	arrowNavigation: true
