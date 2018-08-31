@@ -5,7 +5,7 @@
 				"title" : "Circulo en el avatar generator",
 				"color" : "#ee6e73",
 				"tech" : ["HTML", "CSS", "JavaScript", "Canvas HTML", "Responsive Design"],
-				"info" : "I made this on my free time, while Argentina was debating the legalization of abortion. On social networks, anyone supporting this would put green colored circle on their profile picture, but I noticed lots of people that didn't know how to do this easily without relying on apps or using programs on their computers. So in six hours, I coded this simple webpage that lets you upload a photo and put a customizable circle to use it in any social network later on. The site was quite a success, and was used by plenty of people.",
+				"info" : "I made this on my free time, while Argentina was debating the legalization of abortion.\nOn social networks, anyone supporting this would put green colored circle on their profile picture, but I noticed lots of people that didn't know how to do this easily without relying on apps or using programs on their computers. So in six hours, I coded this simple webpage that lets you upload a photo and put a customizable circle to use it in any social network later on. The site was quite a success, and was used by plenty of people.",
 				"folder" : "circulo",
 				"ssqt" : 2,
 				"code" : "https://github.com/EmilianoTalamo/circulo",

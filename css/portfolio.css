@@ -195,6 +195,10 @@ article p{
 	font-size: 1.15em;
 	line-height: 1.35;
 	margin-bottom: 2rem;
+	white-space: pre-line;
+}
+article p > br{
+	line-height: 1.8rem;
 }
 
 #close{

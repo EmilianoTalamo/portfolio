@@ -58,12 +58,11 @@ function projectClicked() {
 		tech.appendChild(document.createElement("li")).innerHTML = i;
 	}
 	// Description
-	content.appendChild(document.createElement("p")).innerHTML = projects[index].info;
+	content.appendChild(document.createElement("p")).innerText = projects[index].info;
 	// Gallery
 	let gallery = content.appendChild(document.createElement("ul"));
 	gallery.id = "galleryThumbs";
 	for(let i=1 ; i<=projects[index].ssqt ; i++ ) {
-		console.log(i, projects[index]);
 		let galleryItem = gallery.appendChild(document.createElement("li"));
 		let galleryLink = galleryItem.appendChild(document.createElement("a"));
 		galleryLink.className = "gallery";
