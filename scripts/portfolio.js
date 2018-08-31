@@ -36,6 +36,9 @@ function writeProjects() {
 
 
 function projectClicked() {
+	if(document.getElementById("projectInfo") != undefined) {
+		closeProject();
+	}
 	var index = this.dataset.index;
 	let article = document.body.appendChild(document.createElement("article"));
 	article.id = "projectInfo";
