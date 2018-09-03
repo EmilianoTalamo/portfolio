@@ -2,8 +2,8 @@ var categoria = [];
 
 categoria["remeras"] = [
 	{
-		"titulo" : "Remera Germán Rodríguez",
-		"descripcion" : "Remera con la cara del coordinador de la carrera de Diseño Web.",
+		"titulo" : "Remera 1",
+		"descripcion" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi lacus elit, posuere quis consectetur et, gravida in nibh.",
 		"precio" : 500.00,
 		"sizes" : true,
 		"fotos" : [
@@ -15,8 +15,8 @@ categoria["remeras"] = [
 		"colores" : ["Negro", "Blanco"]
 	},
 	{
-		"titulo" : "Remera Photoshop no sirve",
-		"descripcion" : "Remera con la cara del profesor de diseño vectorial Pablo Onofaro con la leyenda \"Photoshop no sirve para nada\".",
+		"titulo" : "Remera 2",
+		"descripcion" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi lacus elit, posuere quis consectetur et, gravida in nibh.",
 		"precio" : 250.00,
 		"sizes" : true,
 		"fotos" : [
@@ -30,8 +30,8 @@ categoria["remeras"] = [
 		"colores" : ["Azul", "Rojo", "Naranja", "Negro", "Blanco"]
 	},
 	{
-		"titulo" : "Remera Parcial de IDM",
-		"descripcion" : "Remera con el parcial de Nicolás Samur de Interacción con Dispositivos Móviles.",
+		"titulo" : "Remera 3",
+		"descripcion" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi lacus elit, posuere quis consectetur et, gravida in nibh.",
 		"precio" : 300.00,
 		"sizes" : true,
 		"fotos" : [
@@ -41,8 +41,8 @@ categoria["remeras"] = [
 		"colores" : ["Piel"]
 	},
 	{
-		"titulo" : "Remera Sergio Faccinetti",
-		"descripcion" : "Remera con la cara de Sergio.",
+		"titulo" : "Remera 4",
+		"descripcion" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi lacus elit, posuere quis consectetur et, gravida in nibh.",
 		"precio" : 2500.00,
 		"sizes" : true,
 		"fotos" : [
@@ -52,8 +52,8 @@ categoria["remeras"] = [
 		"colores" : ["Blanco"]
 	},
 	{
-		"titulo" : "Remera Fede drummer",
-		"descripcion" : "Remera con el profesor Federico Noto en sus épocas rebeldes.",
+		"titulo" : "Remera 5",
+		"descripcion" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi lacus elit, posuere quis consectetur et, gravida in nibh.",
 		"precio" : 400.00,
 		"sizes" : true,
 		"fotos" : [
@@ -63,8 +63,8 @@ categoria["remeras"] = [
 		"colores" : ["Negro"]
 	},
 	{
-		"titulo" : "Remera no válida",
-		"descripcion" : "Remera que no valida según la normativa de la W3C.",
+		"titulo" : "Remera 6",
+		"descripcion" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi lacus elit, posuere quis consectetur et, gravida in nibh.",
 		"precio" : 200.00,
 		"sizes" : true,
 		"fotos" : [
@@ -76,8 +76,8 @@ categoria["remeras"] = [
 		"colores" : ["Negro", "Azul", "Rojo", "Blanco"]
 	},
 	{
-		"titulo" : "Remera anti-multimedial",
-		"descripcion" : "Remera para demostrar tu repudio hacia la carrera de Diseño Multimedial.",
+		"titulo" : "Remera 7",
+		"descripcion" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi lacus elit, posuere quis consectetur et, gravida in nibh.",
 		"precio" : 180.00,
 		"sizes" : true,
 		"fotos" : [
@@ -89,8 +89,8 @@ categoria["remeras"] = [
 		"colores" : ["Amarillo", "Negro", "Violeta", "Rojo", "Verde", "Naranja", "Rosa"]
 	},
 	{
-		"titulo" : "Remera mala usabilidad",
-		"descripcion" : "Remera poco legible con la cara de Diego Brezca.",
+		"titulo" : "Remera 8",
+		"descripcion" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi lacus elit, posuere quis consectetur et, gravida in nibh.",
 		"precio" : 200.00,
 		"sizes" : true,
 		"fotos" : [
@@ -104,8 +104,8 @@ categoria["remeras"] = [
 
 categoria["tazas"] = [
 	{
-		"titulo" : "Taza DV",
-		"descripcion" : "Taza con el logo de la Da Vinci.",
+		"titulo" : "Taza 1",
+		"descripcion" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi lacus elit, posuere quis consectetur et, gravida in nibh.",
 		"precio" : 120.00,
 		"sizes" : false,
 		"fotos" : [
@@ -116,8 +116,8 @@ categoria["tazas"] = [
 		"colores" : ["Blanco", "Negro"]
 	},
 	{
-		"titulo" : "Taza Fantasmas Del Caribe",
-		"descripcion" : "Taza de la gran banda tropical Los Fantasmas Del Caribe.",
+		"titulo" : "Taza 2",
+		"descripcion" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi lacus elit, posuere quis consectetur et, gravida in nibh.",
 		"precio" : 70.00,
 		"sizes" : false,
 		"fotos" : [
@@ -127,8 +127,8 @@ categoria["tazas"] = [
 		"colores" : ["Verde", "Azul", "Celeste", "Violeta"]
 	},
 	{
-		"titulo" : "Taza SheQuery",
-		"descripcion" : "Taza de la popular librería de JavaScript, SheQuery.",
+		"titulo" : "Taza 3",
+		"descripcion" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi lacus elit, posuere quis consectetur et, gravida in nibh.",
 		"precio" : 90.00,
 		"sizes" : false,
 		"fotos" : [
@@ -145,7 +145,7 @@ categoria["tazas"] = [
 categoria["gorras"] = [
 	{
 		"titulo" : "Gorra DM",
-		"descripcion" : "Gorra de la carrera de Diseño Multimedial.",
+		"descripcion" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi lacus elit, posuere quis consectetur et, gravida in nibh.",
 		"precio" : 60.00,
 		"sizes" : false,
 		"fotos" : [
@@ -219,8 +219,8 @@ categoria["gorras"] = [
 
 categoria["posters"] = [
 	{
-		"titulo" : "Peter Pan",
-		"descripcion" : "Por Florencia Milano.",
+		"titulo" : "Poster 1",
+		"descripcion" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi lacus elit, posuere quis consectetur et, gravida in nibh.",
 		"precio" : 600.00,
 		"sizes" : false,
 		"fotos" : [
@@ -229,8 +229,8 @@ categoria["posters"] = [
 		"color" : false
 	},
 	{
-		"titulo" : "Icaro Cyberpunk",
-		"descripcion" : "Por Rosario Facile.",
+		"titulo" : "Poster 2",
+		"descripcion" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi lacus elit, posuere quis consectetur et, gravida in nibh.",
 		"precio" : 600.00,
 		"sizes" : false,
 		"fotos" : [
@@ -239,8 +239,8 @@ categoria["posters"] = [
 		"color" : false
 	},
 	{
-		"titulo" : "Composición",
-		"descripcion" : "Por Anabella Simonelli.",
+		"titulo" : "Poster 3",
+		"descripcion" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi lacus elit, posuere quis consectetur et, gravida in nibh.",
 		"precio" : 600.00,
 		"sizes" : false,
 		"fotos" : [
@@ -249,8 +249,8 @@ categoria["posters"] = [
 		"color" : false
 	},
 	{
-		"titulo" : "Mosca humana",
-		"descripcion" : "Pintura digital anónima.",
+		"titulo" : "Poster 4",
+		"descripcion" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi lacus elit, posuere quis consectetur et, gravida in nibh.",
 		"precio" : 600.00,
 		"sizes" : false,
 		"fotos" : [
@@ -259,8 +259,8 @@ categoria["posters"] = [
 		"color" : false
 	},
 	{
-		"titulo" : "2B",
-		"descripcion" : "Por Emiliano Tálamo.",
+		"titulo" : "Poster 5",
+		"descripcion" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi lacus elit, posuere quis consectetur et, gravida in nibh.",
 		"precio" : 600.00,
 		"sizes" : false,
 		"fotos" : [
@@ -269,8 +269,8 @@ categoria["posters"] = [
 		"color" : false
 	},
 	{
-		"titulo" : "Cazador de criaturas",
-		"descripcion" : "Por Martín Anton.",
+		"titulo" : "Poster 6",
+		"descripcion" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi lacus elit, posuere quis consectetur et, gravida in nibh.",
 		"precio" : 600.00,
 		"sizes" : false,
 		"fotos" : [
