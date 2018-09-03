@@ -25,9 +25,9 @@
 				"title" : "140 Social Network",
 				"color" : "#E91E63",
 				"tech" : ["HTML", "CSS", "JavaScript", "PHP", "MySQL", "Illustrator"],
-				"info" : "Basic twitter clone that i had to do for my PHP Class. It was completely designed and coded by me in less than three weeks.\nIt offers profile browsing, following or unfollowing people, favs, and it also includes an admin panel to view stats of the users' behaivour in the social network similar to Google Analytics.",
+				"info" : "Basic twitter clone that I had to do for my PHP Class. It was completely designed and coded by me in less than three weeks.\nSome basic functionalities are profile browsing, following or unfollowing people, favs.\nIt also includes an admin panel to view stats of the users' behaviour in the social network similar to Google Analytics. Only users marked as 'admin' on the database can access to this.",
 				"folder" : "140",
-				"ssqt" : 0,
+				"ssqt" : 3,
 				"code" : "https://github.com/EmilianoTalamo/portfolio/tree/master/work/src/140",
 				"view" : false
 			},
@@ -37,7 +37,7 @@
 				"tech" : ["InDesign", "Illustrator", "Photoshop"],
 				"info" : "A simple turistic brochure of my hometown that I had to design for Graphic Design Class.",
 				"folder" : "si-brochure",
-				"ssqt" : 0,
+				"ssqt" : 3,
 				"code" : false,
 				"view" : false
 			},
