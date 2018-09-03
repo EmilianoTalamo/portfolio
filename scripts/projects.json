@@ -17,7 +17,7 @@
 				"tech" : ["AngularJS", "jQuery", "Cordova", "HTML", "JavaScript", "AJAX", "CSS", "PHP", "MySQL", "Illustrator", "Sketch", "Git"],
 				"info" : "The previous year of this project, I made an app called Tweetdrafter in jQuery Mobile.\nThis is an updated version rewritten from scratch on AngularJS 1.4.5, with additional online functionalities such as cloud syncing.",
 				"folder" : "td-2online",
-				"ssqt" : 0,
+				"ssqt" : 4,
 				"code" : "https://github.com/EmilianoTalamo/tweetdrafter-2-online",
 				"view" : false
 			},
