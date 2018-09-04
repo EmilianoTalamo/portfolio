@@ -3,7 +3,7 @@
 define('SQL_SERVER', 'localhost');
 define('SQL_USER', 'root');
 define('SQL_PASS', '');
-define('SQL_DB', 'dw3_talamo_emiliano');
+define('SQL_DB', 'DW3_TALAMO_EMILIANO');
 
 session_start();
 date_default_timezone_set('America/Argentina/Buenos_aires');
