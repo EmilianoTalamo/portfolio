@@ -47,7 +47,7 @@
 				"tech" : ["HTML", "CSS", "JavaScript", "PHP"],
 				"info" : "This is a college project that I was required to do for PHP class. It's a webpage based on the comedic band Les Luthiers designed from scratch by me.\nThe navigation is entirely based on PHP 'Includes' by having a main skeleton and various templates that load into view as required with GET requests.",
 				"folder" : "lesluthiers",
-				"ssqt" : 0,
+				"ssqt" : 2,
 				"code" : "https://github.com/EmilianoTalamo/portfolio/tree/master/work/src/lesluthiers",
 				"view" : false
 			},
@@ -55,11 +55,11 @@
 				"title" : "Tweetdrafter Landing Page",
 				"color" : "#1E88E5",
 				"tech" : ["HTML", "CSS", "Responsive Design", "Illustrator", "JavaScript", "Premiere"],
-				"info" : "Landing page for my app 'Tweetdrafter'.",
+				"info" : "Single page landing for my app 'Tweetdrafter'. The interface is bootstrap-like, using my app's palette.\nIt offers a gallery entirely coded by me in vanilla JavaScript.\nThe website adapts perfectly to any mobile device adjusting its elements position, size and behaviour.",
 				"folder" : "td-landing",
-				"ssqt" : 0,
-				"code" : false,
-				"view" : false
+				"ssqt" : 5,
+				"code" : "https://github.com/EmilianoTalamo/portfolio/tree/master/work/src/td-landing",
+				"view" : "./work/src/td-landing/"
 			},
 			{
 				"title" : "DV Store E-Commerce Design",

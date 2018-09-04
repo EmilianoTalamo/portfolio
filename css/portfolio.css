@@ -278,8 +278,7 @@ article p > br{
 
 @media (max-width: 1024px){
 	#galleryThumbs{
-		justify-content: space-between;
-		flex-wrap: wrap;
+		justify-content: space-evenly;
 	}
 
 	#galleryThumbs li{
