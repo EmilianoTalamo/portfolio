@@ -67,7 +67,7 @@
 				"tech" : ["HTML", "JavaScript", "CSS", "Illustrator"],
 				"info" : "Functioning simple e-commerce design purely written in vanilla JavaScript, and designed entirely by me as a college project.",
 				"folder" : "dvstore",
-				"ssqt" : 0,
+				"ssqt" : 4,
 				"code" : "https://github.com/EmilianoTalamo/portfolio/tree/master/work/src/dvstore",
 				"view" : "./work/src/dvstore/"
 			},

@@ -144,7 +144,7 @@ categoria["tazas"] = [
 
 categoria["gorras"] = [
 	{
-		"titulo" : "Gorra DM",
+		"titulo" : "Gorra 1",
 		"descripcion" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi lacus elit, posuere quis consectetur et, gravida in nibh.",
 		"precio" : 60.00,
 		"sizes" : false,
@@ -156,8 +156,8 @@ categoria["gorras"] = [
 		"colores" : ["Rojo", "Amarillo", "Naranja"]
 	},
 	{
-		"titulo" : "Gorra DG",
-		"descripcion" : "Gorra de la carrera de Diseño Gráfico.",
+		"titulo" : "Gorra 2",
+		"descripcion" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi lacus elit, posuere quis consectetur et, gravida in nibh.",
 		"precio" : 60.00,
 		"sizes" : false,
 		"fotos" : [
@@ -168,8 +168,8 @@ categoria["gorras"] = [
 		"colores" : ["Violeta", "Azul"]
 	},
 	{
-		"titulo" : "Gorra VG",
-		"descripcion" : "Gorra de la carrera de Diseño de Videojuegos.",
+		"titulo" : "Gorra 3",
+		"descripcion" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi lacus elit, posuere quis consectetur et, gravida in nibh.",
 		"precio" : 60.00,
 		"sizes" : false,
 		"fotos" : [
@@ -181,8 +181,8 @@ categoria["gorras"] = [
 		"colores" : ["Negro", "Blanco", "Gris"]
 	},
 	{
-		"titulo" : "Gorra DW",
-		"descripcion" : "Gorra de la carrera de Diseño Web.",
+		"titulo" : "Gorra 4",
+		"descripcion" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi lacus elit, posuere quis consectetur et, gravida in nibh.",
 		"precio" : 60.00,
 		"sizes" : false,
 		"fotos" : [
@@ -193,8 +193,8 @@ categoria["gorras"] = [
 		"colores" : ["Verde", "Rojo"]
 	},
 	{
-		"titulo" : "Gorra CA",
-		"descripcion" : "Gorra de la carrera de Cine de Animación.",
+		"titulo" : "Gorra 5",
+		"descripcion" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi lacus elit, posuere quis consectetur et, gravida in nibh.",
 		"precio" : 60.00,
 		"sizes" : false,
 		"fotos" : [
@@ -205,8 +205,8 @@ categoria["gorras"] = [
 		"colores" : ["Azul", "Violeta", "Gris"]
 	},
 	{
-		"titulo" : "Gorra AS",
-		"descripcion" : "Gorra de la carrera de Analista de Sistemas.",
+		"titulo" : "Gorra 6",
+		"descripcion" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi lacus elit, posuere quis consectetur et, gravida in nibh.",
 		"precio" : 60.00,
 		"sizes" : false,
 		"fotos" : [
