@@ -75,11 +75,11 @@
 				"title" : "Music Festival Poster Design",
 				"color" : "#607D8B",
 				"tech" : ["Illustrator"],
-				"info" : "A fictional music festival poster drawn entirely by me in Illustrator.",
+				"info" : "A fictional music festival poster drawn by me in Adobe Illustrator.",
 				"folder" : "lineup",
-				"ssqt" : 0,
+				"ssqt" : 4,
 				"code" : false,
-				"view" : false
+				"view" : "https://www.behance.net/gallery/69926823/Nekromantia-Festivaali"
 			},
 			{
 				"title" : "Faccinetti Telegram Bot",
