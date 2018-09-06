@@ -65,7 +65,7 @@
 				"title" : "DV Store E-Commerce Design",
 				"color" : "#F44336",
 				"tech" : ["HTML", "JavaScript", "CSS", "Illustrator"],
-				"info" : "Functioning simple e-commerce design purely written in vanilla JavaScript, and designed entirely by me as a college project.",
+				"info" : "Functioning simple e-commerce design coded in plain JavaScript, and designed by me.\nIt supports category browsing, and each product can be previewed within a popup window with a gallery, and the option to select color, size and quantity before adding it to the cart.\nThe cart itself adds up automatically each product added, giving you the total on top. It also identifies if the same product is added twice, summing up to the quantity.\nThe checkout is fairly simple, it's just a simple form with some validations.",
 				"folder" : "dvstore",
 				"ssqt" : 4,
 				"code" : "https://github.com/EmilianoTalamo/portfolio/tree/master/work/src/dvstore",
