@@ -82,12 +82,12 @@
 				"view" : "https://www.behance.net/gallery/69926823/Nekromantia-Festivaali"
 			},
 			{
-				"title" : "Faccinetti Telegram Bot",
+				"title" : "Sergio F. Telegram Bot",
 				"color" : "#009688",
 				"tech" : ["NodeJS", "Telegram API", "Heroku", "Git"],
-				"info" : "A Telegram Bot that I coded on my free time to remind me of my exams and assignment due dates.",
+				"info" : "A Telegram Bot that I coded during my free time to remind me of my exams and assignment due dates.",
 				"folder" : "sergiobot",
-				"ssqt" : 0,
+				"ssqt" : 2,
 				"code" : false,
 				"view" : false
 			},
