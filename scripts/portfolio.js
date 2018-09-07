@@ -96,7 +96,11 @@ function projectClicked() {
 }
 
 function closeProject() {
-	document.body.removeChild(document.getElementById("projectInfo"));
+	document.getElementById("projectInfo").style.animationName = "info-out";
+	setTimeout(function() { 
+		document.body.removeChild(document.getElementById("projectInfo"));
+	}, 200);
+	
 }
 
 // Gallery

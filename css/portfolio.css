@@ -151,6 +151,10 @@ article{
 	height: 100vh;
 	background-color: white;
 	color: rgba(0,0,0,0.85);
+	animation-name: info-in;
+	animation-timing-function: ease-out;
+	animation-duration: 500ms;
+	animation-fill-mode: forwards;
 }
 article #divider{
 	position: absolute;
@@ -209,6 +213,7 @@ article p > br{
 	article{
 		position: fixed;
 		width: 100vw;
+		animation-duration: 200ms;
 	}
 
 	article #divider{
@@ -343,5 +348,30 @@ article p > br{
 		padding: 12px 18px 12px 14px;
 		width: 50%;
 		font-size: 1rem;
+	}
+}
+
+@keyframes info-in{
+	from{
+		transform: translateY(2vh);
+		opacity: 0;
+	}
+	to{
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
+@keyframes info-out{
+	from{
+		opacity: 1;
+		transform: translateY(0);
+	}
+	70%{
+		opacity: 0;
+	}
+	to{
+		opacity: 0;
+		transform: translateY(1vh);
 	}
 }
