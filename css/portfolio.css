@@ -252,6 +252,13 @@ article p > br{
 
 /* Gallery */
 
+#fullscreenGallery{
+	z-index: 9999;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+
 #galleryThumbs{
 	display: flex;
 	flex-wrap: wrap;
@@ -362,7 +369,7 @@ article p > br{
 	}
 }
 
-@keyframes info-out{
+/* @keyframes info-out{
 	from{
 		opacity: 1;
 		transform: translateY(0);
@@ -373,5 +380,4 @@ article p > br{
 	to{
 		opacity: 0;
 		transform: translateY(1vh);
-	}
-}
+	} */

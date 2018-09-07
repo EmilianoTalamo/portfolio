@@ -96,16 +96,13 @@ function projectClicked() {
 }
 
 function closeProject() {
-	document.getElementById("projectInfo").style.animationName = "info-out";
-	setTimeout(function() { 
-		document.body.removeChild(document.getElementById("projectInfo"));
-	}, 200);
-	
+	document.body.removeChild(document.getElementById("projectInfo"));
+	document.getElementById("fullscreenGallery").innerHTML = "";
 }
 
 // Gallery
 var options = {
-	appendToSelector: "#projectInfo",
+	appendToSelector: "#fullscreenGallery",
 	closeWithEscape: true,
 	closeOnScroll: true,
 	arrowNavigation: true
