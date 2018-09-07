@@ -97,7 +97,7 @@
 				"tech" : ["HTML", "CSS", "JavaScript"],
 				"info" : "I made this webpage on my freetime on my first year of learning web development.\nI created it so it was simpler for me to learn and use CSS Flexbox easily, since it was a new thing for the time.\nIt may have some missing features, but it helped me a lot, and sometimes it still does.",
 				"folder" : "flexboxhelper",
-				"ssqt" : 0,
+				"ssqt" : 1,
 				"code" : "https://github.com/EmilianoTalamo/flexboxhelper",
 				"view" : "https://emilianotalamo.github.io/flexboxhelper"
 			},
@@ -133,7 +133,7 @@
 			},
 			{
 				"title" : "NieR:Automata Vectorized Illustration",
-				"color" : "#E0E0E0",
+				"color" : "#BDB8A4",
 				"isbright" : true,
 				"tech" : ["Illustrator"],
 				"info" : "A vectorized illustration that I drawn during my free time.\nI made it in Illustrator in one sit, in roughly 10 hours.",
