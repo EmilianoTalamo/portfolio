@@ -307,7 +307,6 @@ article p > br{
 
 @media (max-width: 1024px){
 	#galleryThumbs{
-		grid-template-columns: 1fr 1fr;
 		grid-column-gap: 12px;
 		grid-row-gap: 12px;
 		margin-bottom: 2rem;
@@ -320,6 +319,11 @@ article p > br{
 
 	.lum-lightbox-inner img{
 		max-width: 90vw;
+	}
+}
+@media (max-width: 480px){
+	#galleryThumbs{
+		grid-template-columns: 1fr 1fr;
 	}
 }
 
