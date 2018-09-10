@@ -105,9 +105,9 @@
 				"title" : "San Isidro Web Mockup",
 				"color" : "#3F51B5",
 				"tech" : ["Photoshop", "Illustrator"],
-				"info" : "A mockup for a webpage of my hometown that I had to do for Photoshop Class.",
+				"info" : "A mockup for a webpage of my hometown that I had to do for Photoshop Class, using the 960 Grid System.",
 				"folder" : "sanisidro",
-				"ssqt" : 0,
+				"ssqt" : 3,
 				"code" : false,
 				"view" : false
 			},

@@ -49,7 +49,7 @@ function projectClicked() {
 	document.getElementById("close").innerHTML = "&times;";
 	document.getElementById("close").addEventListener("click", closeProject);
 	// Divider
-	article.appendChild(document.createElement("div")).id = "divider";
+	// article.appendChild(document.createElement("div")).id = "divider";
 
 	let content = article.appendChild(document.createElement("div"));
 	content.id = "content";
@@ -80,7 +80,7 @@ function projectClicked() {
 	// Code link
 	if(projects[index].code != false) {
 		let codeLink = links.appendChild(document.createElement("a"));
-		codeLink.className = "icon-code";
+		codeLink.className = "icon-code codeBtn";
 		codeLink.href = projects[index].code;
 		codeLink.target = "_blank";
 		codeLink.innerHTML = "Code";
@@ -88,7 +88,7 @@ function projectClicked() {
 	// View link
 	if(projects[index].view != false) {
 		let viewLink = links.appendChild(document.createElement("a"));
-		viewLink.className = "icon-export";
+		viewLink.className = "icon-export viewBtn";
 		viewLink.href = projects[index].view;
 		viewLink.target = "_blank";
 		viewLink.innerHTML = "View";
