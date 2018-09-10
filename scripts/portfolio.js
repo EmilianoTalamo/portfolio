@@ -16,7 +16,8 @@ fetch("./scripts/projects.json") // Read projects JSON
 )
 .catch(err => {
 	// Error fetching JSON
-	document.querySelector("main").innerHTML = "<p>There was an error loading the projects, check that your browser is updated. If the problem persists, please email me.</p><br><pre>" + err + "</pre>";
+	document.querySelector("main").innerHTML = "<p>There was an error loading the projects, check that your browser is updated.</p><p>If the problem persists, please email me.</p>";
+	console.error(err);
 });
 
 

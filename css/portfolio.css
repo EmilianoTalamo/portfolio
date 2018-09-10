@@ -13,6 +13,18 @@ button:hover{ cursor: pointer; }
 	color: white;
 }
 
+/* Errors */
+#defaultMsg{
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	color: #222222;
+	padding-left: 40px;
+	line-height: 1.33;
+}
+#defaultMsg a{
+	color: #1E88E5;
+	text-decoration: underline;
+}
+
 /* header */
 
 header{
@@ -374,15 +386,3 @@ article p > br{
 	}
 }
 
-/* @keyframes info-out{
-	from{
-		opacity: 1;
-		transform: translateY(0);
-	}
-	70%{
-		opacity: 0;
-	}
-	to{
-		opacity: 0;
-		transform: translateY(1vh);
-	} */
