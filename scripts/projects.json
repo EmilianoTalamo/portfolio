@@ -15,7 +15,7 @@
 				"title" : "Tweetdrafter 2 App (Online)",
 				"color" : "#1E88E5",
 				"tech" : ["AngularJS", "jQuery", "Cordova", "HTML", "JavaScript", "AJAX", "CSS", "PHP", "MySQL", "Illustrator", "Sketch", "Git"],
-				"info" : "The previous year of this project, I made an app called Tweetdrafter in jQuery Mobile.\nThis is an updated version rewritten from scratch on AngularJS 1.4.5, with additional online functionalities such as cloud syncing.",
+				"info" : "The previous year of this project, I made an app called Tweetdrafter in jQuery Mobile.\nThis is an updated version rewritten from scratch on AngularJS 1.4.5, with additional online functionalities such as cloud syncing, but can be used offline if preferred.\nTweetdrafter is a simple app that lets you write draft for tweets, with characters counter and in-app tweet button.",
 				"folder" : "td-2online",
 				"ssqt" : 4,
 				"code" : "https://github.com/EmilianoTalamo/tweetdrafter-2-online",
@@ -112,26 +112,6 @@
 				"view" : false
 			},
 			{
-				"title" : "Tweetdrafter App",
-				"color" : "#1E88E5",
-				"tech" : ["jQuery", "Cordova", "jQuery Mobile", "HTML", "CSS", "Illustrator", "Sketch", "Git"],
-				"info" : "Tweetdrafter is a simple app that let's you write drafts for tweets easily.\nEverything, from logo design to app code was made by me. I used Sketch for the app mockup, Illustrator for the logo and icons, and jQuery Mobile as a base app framework.\nI remade this app later on in AngularJS.",
-				"folder" : "td",
-				"ssqt" : 0,
-				"code" : "https://github.com/EmilianoTalamo/tweetdrafter",
-				"view" : false
-			},
-			{
-				"title" : "Dota XHTML-Strict Web",
-				"color" : "#795548",
-				"tech" : ["XHTML", "CSS", "PHP"],
-				"info" : "College project of my first year of web development.\nIt's a thematic webpage made in XHTML Strict,  validated by W3C. It also includes a form that saves the data to a server file with PHP.",
-				"folder" : "dota",
-				"ssqt" : 0,
-				"code" : false,
-				"view" : false
-			},
-			{
 				"title" : "NieR:Automata Vectorized Illustration",
 				"color" : "#BDB8A4",
 				"isbright" : true,
@@ -141,6 +121,26 @@
 				"ssqt" : 0,
 				"code" : false,
 				"view" : "https://www.behance.net/gallery/69927033/2B"
+			},
+			{
+				"title" : "Tweetdrafter App",
+				"color" : "#1E88E5",
+				"tech" : ["jQuery", "Cordova", "jQuery Mobile", "HTML", "CSS", "Illustrator", "Sketch", "Git"],
+				"info" : "Tweetdrafter is a simple app that lets you write drafts for tweets easily, with characters counter and in-app tweet button.\nEverything, from logo design to app code was made by me. I used Sketch for the app mockup, Illustrator for the logo and icons, and jQuery Mobile as a base app framework.\nI remade this app later on in AngularJS.",
+				"folder" : "td",
+				"ssqt" : 2,
+				"code" : "https://github.com/EmilianoTalamo/tweetdrafter",
+				"view" : false
+			},
+			{
+				"title" : "Dota XHTML-Strict Web",
+				"color" : "#795548",
+				"tech" : ["XHTML", "CSS", "PHP"],
+				"info" : "College project of my first year of web development. This is my first fully functional complex web ever made.\nIt's a thematic blog-esque webpage made in XHTML Strict, validated by W3C.\nIt's fully accesible since it uses <abbr> and <acronym> tags, and it doesn't depend on scripts or the stylesheet to be usable. This is all beneficial for screen readers.\nIt has a print stylesheet and the icons are laid in a single image as a sprite for resource optimizations.\nThere's a section with a third party gallery, and another one that includes a form that saves the data inputted by the user to the server, using PHP.",
+				"folder" : "dota",
+				"ssqt" : 0,
+				"code" : "https://github.com/EmilianoTalamo/portfolio/tree/master/work/src/dota",
+				"view" : "./work/src/dota/"
 			}
 			
 		]
