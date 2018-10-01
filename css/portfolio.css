@@ -61,6 +61,11 @@ header ul li a{
 	padding: 0.33rem;
 	margin: 0 0.33rem;
 	transition: color 100ms ease-out;
+	font-size: 0px;
+}
+header ul li a:before{
+	font-size: 32px;
+	margin-left: 0 !important;
 }
 header ul li a:first-of-type{
 	padding-left: 0;
@@ -90,6 +95,9 @@ header ul li a:hover{
 
 	header ul{
 		font-size: 2rem;
+	}
+	header ul li a:before{
+		font-size: 2.2rem;
 	}
 	header ul li a:hover{
 		color: inherit;

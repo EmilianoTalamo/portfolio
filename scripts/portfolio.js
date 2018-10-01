@@ -4,9 +4,7 @@ var linksContainer = document.getElementById("linksContainer");
 
 fetch("./scripts/projects.json") // Read projects JSON
 .then(
-	response => {
-		return response.json(); // Get JSON
-	}
+	response =>  response.json() // Get JSON
 )
 .then(
 	data => {
