@@ -289,7 +289,7 @@ article p > br{
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-column-gap: 8px;
-	grid-auto-rows: 1fr;
+	grid-template-rows: repeat(auto-fill, 1fr);
 	grid-row-gap: 8px;
 	line-height: 0;
 	margin-bottom: 1.5rem;
@@ -339,6 +339,7 @@ article p > br{
 #links{
 	border-top: .5px solid rgba(0,0,0,0.1);
 	padding-top: 1.5rem;
+	padding-bottom: 64px;
 	display: grid;
 	grid-template-columns: 22% 22%;
 	grid-column-gap: 8px;
@@ -379,6 +380,7 @@ article p > br{
 		border-top: none;
 		padding-top: 0;
 		grid-template-columns: 1fr 1fr;
+		padding-bottom: 0;
 	}
 	#links a{
 		font-size: 1.2rem;
