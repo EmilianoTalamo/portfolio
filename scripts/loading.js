@@ -6,4 +6,4 @@ window.onload = function() {
 	setTimeout(function() {
 		document.body.removeChild(overlay); 
 	}, 1500);
-}
+};

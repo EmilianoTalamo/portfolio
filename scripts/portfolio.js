@@ -2,21 +2,25 @@ var projects;
 var linksContainer = document.getElementById("linksContainer");
 
 
-fetch("./scripts/projects.json") // Read projects JSON
-.then(
-	response =>  response.json() // Get JSON
-)
-.then(
-	data => {
-		projects = data.projects; // Save JSON data on variable
-		writeProjects(); // Deploy info on web
-	}
-)
-.catch(err => {
-	// Error fetching JSON
-	document.querySelector("main").innerHTML = "<p>There was an error loading the projects, check that your browser is updated.</p><p>If the problem persists, please email me.</p>";
-	console.error(err);
-});
+function fetchProjects() {
+	fetch("./scripts/projects.json") // Read projects JSON
+	.then(
+		response =>  response.json() // Get JSON
+	)
+	.then(
+		data => {
+			projects = data.projects; // Save JSON data on variable
+			writeProjects(); // Deploy info on web
+		}
+	)
+	.catch(err => {
+		// Error fetching JSON
+		document.querySelector("main").innerHTML = "<p>There was an error loading the projects, check that your browser is updated.</p><p>If the problem persists, please email me.</p>";
+		console.error(err);
+	});
+}
+
+fetchProjects();
 
 
 function writeProjects() {
