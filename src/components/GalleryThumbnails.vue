@@ -54,7 +54,7 @@ export default {
 			let ssqt = this.currentProject.ssqt;
 			let folder = this.currentProject.folder;
 			for (let index = 1; index <= ssqt; index++) {
-				arr.push(`../assets/gallery/${folder}/${index}.jpg`);
+				arr.push(`./assets/gallery/${folder}/${index}.jpg`);
 			}
 			return arr;
 		}
