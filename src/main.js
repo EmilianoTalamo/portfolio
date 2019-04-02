@@ -22,7 +22,7 @@ Vue.component('fa', FontAwesomeIcon)
 const router = new VueRouter({
 	mode: 'history',
 	routes: [{
-			path: '/:p', // Inject component whenever there's a parameter in the URL
+			path: '/portfolio/:p', // Inject component whenever there's a parameter in the URL
 			component: ProjectView, // Inject this component
 			props: (route) => ({
 					p: route.query.p

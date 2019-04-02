@@ -2,7 +2,7 @@
 	<!-- Avoid rendering the window if the URL parameter is incorrect -->
 	<article v-if="currentProject">
 		<!-- Close button -->
-		<router-link to="/" id="close">×</router-link>
+		<router-link to="/portfolio" id="close">×</router-link>
 		<div id="content">
 			<!-- Project title -->
 			<h1>{{ currentProject.title }}</h1>
