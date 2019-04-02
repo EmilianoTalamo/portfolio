@@ -5,7 +5,7 @@ module.exports = {
     sourceMap: true
   },
 
-  publicPath: '/portfolio/',
+  publicPath: "/portfolio/",
   assetsDir: undefined,
   runtimeCompiler: undefined,
   productionSourceMap: undefined,
