@@ -1,0 +1,59 @@
+@import './_config.scss';
+
+#linksContainer{
+	@include mobileMargin("side");
+	margin-bottom: $whitespace;
+	
+
+	li{
+		margin-bottom: .33rem;
+		color: white;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		padding: .66rem;
+		padding-left: 0;
+		margin-right: 4px;
+		user-select: none;
+		a{
+			font-size: 1.33rem;
+			line-height: 1.2;
+			padding: .66rem;
+			border-radius: 2px;
+			max-width: 100%;
+			display: inline-block;
+			box-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2), 0px 2px 2px 0px rgba(0,0,0,0.14), 0px 1px 5px 0px rgba(0,0,0,0.12);
+			&.lightItem{
+				text-shadow: rgba(0, 0, 0, 0.4) 0px 0px 2px, rgba(0, 0, 0, 0.2) 1px 1px 1px;
+			}
+
+			@include mediaTablet {
+				font-size: 1.5rem;
+			}
+		}
+		&:active{
+			transform: scale(.98);
+			transition: transform 66ms linear;
+		}
+
+		@include mediaDesktop {
+			margin-bottom: 0;
+			padding: 8px 12px 8px 0;
+				a{
+					font-size: 24px;
+					line-height: 1;
+					box-shadow: 4px 4px 0 rgba(0,0,0,0.25);
+					transition: box-shadow 66ms linear, transform 100ms linear;
+					&:hover{
+						box-shadow: 6px 5px 0 rgba(0,0,0,0.25);
+						opacity: 0.8;
+						transition: box-shadow 66ms linear, transform 100ms linear;
+					}
+				}
+		}
+	}
+
+	@include mediaDesktop {
+		@include desktopMargin('side');
+	}	
+}

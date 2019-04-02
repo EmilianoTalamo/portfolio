@@ -1,0 +1,31 @@
+@import '../style/_config.scss';
+
+#links{
+	@include mobileMargin(bottom);
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-column-gap: 8px;
+
+	@include mediaTablet {
+		grid-template-columns: 30% 30%;
+		grid-column-gap: 16px;
+	}
+
+	@include mediaDesktop {
+		grid-template-columns: 128px 128px;
+		grid-column-gap: 8px;
+	}
+
+	a{
+		&.view{
+			background-color: $viewBtnColor
+		}
+		&.code{
+			background-color: $codeBtnColor;
+		}
+
+		svg{
+			margin-right: 2px;
+		}
+	}
+}

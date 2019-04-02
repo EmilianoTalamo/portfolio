@@ -1,0 +1,34 @@
+@import './_config.scss';
+
+ul{
+	display: flex;
+
+	a{
+		color: $blackText;
+		font-size: 2.33rem;
+		padding: .33rem .5rem;
+		margin: 0 .1rem;
+		transition: color 100ms ease-out;
+		&:active{
+			color: $emitPurple;
+			transform: scale(.9);
+		}
+
+		@include mediaTablet {
+			font-size: 2.66rem;
+		}
+
+		@include mediaDesktop {
+			font-size: 32px;
+			&:hover{
+				color: $emitPurple;
+				transition: color 100ms;
+			}
+		}
+	}
+}
+
+li:first-of-type a{
+	padding-left: 0;
+	margin-left: 0;
+}

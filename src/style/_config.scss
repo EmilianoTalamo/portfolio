@@ -1,0 +1,73 @@
+// Variables
+// fonts
+$rancho: 'Rancho', Georgia, serif;
+$roboto: 'Roboto', 'Helvetica', 'Helvetica Neue', 'San Francisco', 'Arial', 'Verdana', sans-serif;
+$oswald: 'Oswald', 'Roboto Condensed', 'Roboto', Arial, Verdana, Helvetica, sans-serif;
+// color
+$blackText: rgba(0,0,0,.8);
+$greyText: rgba(0,0,0,0.5);
+$emitPurple: #673AB7;
+$codeBtnColor: #AA00FF;
+$viewBtnColor: #0091EA;
+// misc
+$mobileMarginSide: 1.5rem;
+$mobileMarginBottom: 2rem;
+$desktopMarginSide: 48px;
+$desktopMarginBottom: 16px;
+$whitespace: 100px;
+
+// Mixins
+@mixin roboto($weight) {
+	font-family: $roboto;
+	font-weight: $weight;
+}
+
+@mixin mobileMargin($side) {
+	@if $side == "bottom" {
+		margin-bottom: $mobileMarginBottom;
+	}
+	@if $side == "side" {
+		margin-left: $mobileMarginSide;
+		margin-right: $mobileMarginSide;
+	}
+}
+
+@mixin desktopMargin($side) {
+	@if $side == "bottom" {
+		margin-bottom: $desktopMarginBottom
+	}
+	@if $side == "side" {
+		margin-left: $desktopMarginSide;
+		margin-right: $desktopMarginSide;
+	}
+}
+
+@mixin fullScreen{
+	position: fixed;
+	width: 100vw;
+	min-height: 100vh;
+	top: 0;
+	left: 0;
+	z-index: 999;
+}
+
+@mixin button($color: $emitPurple) {
+	background-color: $color;
+	color: white;
+}
+
+// Media querys
+@mixin mediaTablet {
+	@media (min-width: 768px) and (orientation: portrait) {
+		@content;
+	}
+	@media (min-width: 1024px) and (orientation: landscape) {
+		@content;
+	}
+}
+
+@mixin mediaDesktop {
+	@media (min-width: 1280px) and (orientation: landscape) {
+		@content;
+	}
+}

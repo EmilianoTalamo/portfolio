@@ -1,0 +1,44 @@
+@import './_config.scss';
+
+header{
+	padding: 3rem $mobileMarginSide 0;
+	@include mobileMargin('bottom');
+
+	@include mediaDesktop {
+		padding: $whitespace $desktopMarginSide 0;
+		@include desktopMargin('bottom')
+	}
+
+	h1{
+		font-family: $rancho;
+		font-weight: 400;
+		font-size: 4rem;
+		line-height: 1;
+		@include mobileMargin('bottom');
+
+		@include mediaTablet {
+			font-size: 5rem;
+		}
+
+		@include mediaDesktop {
+			font-size: 4rem;
+			@include desktopMargin('bottom');
+		}
+	}
+
+	h2{
+		font-size: 1.33rem;
+		line-height: 1.5;
+		@include roboto(400);
+		@include mobileMargin('bottom');
+
+		@include mediaTablet {
+			font-size: 1.5rem;
+		}
+
+		@include mediaDesktop {
+			font-size: 20px;
+			@include desktopMargin('bottom');
+		}
+	}
+}

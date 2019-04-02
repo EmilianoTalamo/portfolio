@@ -1,0 +1,82 @@
+@import './_config.scss';
+
+aside{
+	width: 100vw;
+	margin-left: -12vw;
+	@include mobileMargin('bottom');
+	padding: 3rem 0 5rem;
+
+	@include mediaDesktop {
+		margin-left: 0;
+		width: 100%;
+		padding: 32px 0;
+		border-top: .5px solid rgba(0,0,0,0.1);
+	}
+}
+
+.flickity-viewport{
+	height: 50vh;
+	@include mediaDesktop {
+		height: 600px;
+	}
+}
+.carousel-cell {
+  width: 90%;
+	height: 100%;
+	margin-right: 12px;
+	display: flex;
+  align-items: center;
+	justify-content: center;
+	@include mediaDesktop {
+		width: 80%;
+	}
+}
+
+.carousel-cell-image {
+  display: block;
+  max-height: 100%;
+  margin: 0 auto;
+	max-width: 100%;
+	transition: opacity 0.4s;
+	opacity: 0;
+	box-shadow: 1px 1px 6px rgba(0,0,0,.085);
+	margin-bottom: 4px;
+	border: .5px solid rgba(0,0,0,.1);
+}
+
+.carousel-cell-image.flickity-lazyloaded,
+.carousel-cell-image.flickity-lazyerror {
+  opacity: 1;
+}
+
+.flickity-button{
+	color: $blackText;
+}
+
+.flickity-button, .flickity-button:hover {
+	background: transparent;
+}
+
+.flickity-prev-next-button{
+	display: none;
+	@include mediaDesktop {
+		$flickityButtonSize: 100px;
+		width: $flickityButtonSize;
+		height: $flickityButtonSize;
+		display: initial;
+		&.flickity-prev-next-button.previous{
+			left: -100px;
+		}
+		&.flickity-prev-next-button.next{
+			right: -100px;
+		}
+	}
+}
+
+.flickity-page-dots{
+	bottom: -40px;
+}
+
+.flickity-page-dots .dot{
+	background-color: $emitPurple;
+}
