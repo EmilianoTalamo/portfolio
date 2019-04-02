@@ -28,7 +28,7 @@
 				"info" : "A basic Twitter clone that I had to do for my PHP class. It was completely designed and developed by me in less that three weeks.\nSome basic features are the ability to follow or unfollow other users, post messages, like other users' posts and browse profiles.\nIn addition, it includes an administrator panel that only users marked as admin on the database can access to, and it shows statistics of the site and users' behaviour, similar to Google Analytics.",
 				"folder" : "140",
 				"ssqt" : 3,
-				"code" : "https://github.com/EmilianoTalamo/portfolio/tree/master/work/src/140",
+				"code" : "https://github.com/EmilianoTalamo/portfolio/tree/master/docs/work/src/140",
 				"view" : false
 			},
 			{
@@ -48,7 +48,7 @@
 				"info" : "This is a college project that I did for PHP class. It's a webside based on the comedy band \"Les Luthiers\", designed by me.\nWhat this web has in particular is that the navigation is achieved with PHP-includes, by having a base skeleton and managing which template load from the server with GET requests.",
 				"folder" : "lesluthiers",
 				"ssqt" : 2,
-				"code" : "https://github.com/EmilianoTalamo/portfolio/tree/master/work/src/lesluthiers",
+				"code" : "https://github.com/EmilianoTalamo/portfolio/tree/master/docs/work/src/lesluthiers",
 				"view" : false
 			},
 			{
@@ -58,8 +58,8 @@
 				"info" : "Single Page Landing to promote my app \"Tweetdrafter\", made completely by me without using third-party frameworks. The interface is similar to Boostrap, using the app's palette.\nThe website adapts all its elements in terms of position, size and behavior depending on the size of the users' viewport or device.",
 				"folder" : "td-landing",
 				"ssqt" : 5,
-				"code" : "https://github.com/EmilianoTalamo/portfolio/tree/master/work/src/td-landing",
-				"view" : "./work/src/td-landing/"
+				"code" : "https://github.com/EmilianoTalamo/portfolio/tree/master/docs/work/demo/td-landing",
+				"view" : "./work/demo/td-landing/"
 			},
 			{
 				"title" : "DV Store E-Commerce Design",
@@ -68,8 +68,8 @@
 				"info" : "Functioning simple e-commerce design coded in plain JavaScript, and designed by me.\nThe products are divided into categories, and these can be previewed in a modal window with more information and a photo gallery. Here you can also choose size, color and quantity before adding them to the shopping cart.\nThe cart itself adds up automatically each product added, giving you the total on top. It also identifies if the same product is added twice, summing up to the quantity.\nThe checkout is a simulated payment since it doesn't have any server-side behavior, and it has several forms with validation, and at the end a summary of all the data entered by the user and the products to be purchased.",
 				"folder" : "dvstore",
 				"ssqt" : 4,
-				"code" : "https://github.com/EmilianoTalamo/portfolio/tree/master/work/src/dvstore",
-				"view" : "./work/src/dvstore/"
+				"code" : "https://github.com/EmilianoTalamo/portfolio/tree/master/docs/work/demo/dvstore",
+				"view" : "./work/demo/dvstore/"
 			},
 			{
 				"title" : "Music Festival Poster Design",
@@ -82,7 +82,7 @@
 				"view" : "https://www.behance.net/gallery/69926823/Nekromantia-Festivaali"
 			},
 			{
-				"title" : "Sergio F. Telegram Bot",
+				"title" : "SF Telegram Bot",
 				"color" : "#009688",
 				"tech" : ["NodeJS", "Telegram API", "Heroku", "Git"],
 				"info" : "A Telegram Bot that I coded during my free time to remind me and my colleagues of our exams and assignment due dates with a single command.",
@@ -139,8 +139,8 @@
 				"info" : "College project of my first year of web development. This is my first fully functional complex web ever made.\nThe webpage is purely informative, with a structure similar of a blog, and is written in XHTML-Strict, validated by W3C.\nThe markup used is totally accesible, using semantic HTML to help screenreader users to understand the contents meaning. The document's structure do not depend on JavaScript or CSS to make sense, so it still can be navigable without relying on these.\nSome extra stuff that this web has are the support of a print stylesheet, and all the icons are laid in a single image as a sprite for resource optimizations.\nThere's also a section with a third party gallery, and another one that includes a form that saves the data inputted by the user to the server, using PHP.",
 				"folder" : "dota",
 				"ssqt" : 2,
-				"code" : "https://github.com/EmilianoTalamo/portfolio/tree/master/work/src/dota",
-				"view" : "./work/src/dota/"
+				"code" : "https://github.com/EmilianoTalamo/portfolio/tree/master/docs/work/demo/dota",
+				"view" : "./work/demo/dota/"
 			}
 			
 		]

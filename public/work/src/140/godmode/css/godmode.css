@@ -1,0 +1,231 @@
+*{padding:0;margin:0;-webkit-box-sizing:border-box;box-sizing:border-box;list-style:none;text-decoration:none;-webkit-font-smoothing: antialiased;font-family: Roboto; color: #444;}
+a{ color: inherit; font-family: inherit; font-weight: inherit;}
+
+@font-face {
+	font-family: 'product';
+	src: url('../res/fonts/product.ttf');
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'product';
+	src: url('../res/fonts/product-medium.ttf');
+	font-weight: 500;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'product';
+	src: url('../res/fonts/product-bold.ttf');
+	font-weight: 600;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Roboto';
+	src: url("../../res/fonts/roboto/Roboto-Regular.ttf");
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Roboto';
+	src: url("../../res/fonts/roboto/Roboto-Italic.ttf");
+	font-weight: normal;
+	font-style: italic;
+}
+@font-face {
+	font-family: 'Roboto';
+	src: url("../../res/fonts/roboto/Roboto-Medium.ttf");
+	font-weight: 500;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Roboto';
+	src: url("../../res/fonts/roboto/Roboto-MediumItalic.ttf");
+	font-weight: 500;
+	font-style: italic;
+}
+@font-face {
+	font-family: 'Roboto';
+	src: url("../../res/fonts/roboto/Roboto-Bold.ttf");
+	font-weight: bold;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Roboto';
+	src: url("../../res/fonts/roboto/Roboto-BoldItalic.ttf");
+	font-weight: bold;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Roboto Condensed';
+	src: url("../../res/fonts/roboto-condensed/RobotoCondensed-Regular.ttf");
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Roboto Condensed';
+	src: url("../../res/fonts/roboto-condensed/RobotoCondensed-Italic.ttf");
+	font-weight: normal;
+	font-style: italic;
+}
+@font-face {
+	font-family: 'Roboto Condensed';
+	src: url("../../res/fonts/roboto-condensed/RobotoCondensed-Bold.ttf");
+	font-weight: bold;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Roboto Condensed';
+	src: url("../../res/fonts/roboto-condensed/RobotoCondensed-BoldItalic.ttf");
+	font-weight: bold;
+	font-style: italic;
+}
+
+nav{
+	width: 255px;
+	background-color: #fafafa;
+	height: 100vh;
+	position: fixed;
+	left: 0;
+	top: 0;
+	box-shadow: 0 0 5px 0 rgba(0,0,0,0.35);
+	padding-top: 32px;
+}
+nav a{
+	color: #444;
+	font-family: 'product';
+	font-weight: 400;
+	font-size: 1.05em;
+	padding: 8px 0;
+	display: block;
+}
+nav li{
+	padding: 8px 16px;
+}
+
+main{
+	margin-left: 255px;
+	background-color: rgb(238,238,238);
+	min-height: 100vh;
+	padding-top: 48px;
+}
+
+div#content{
+	width: 750px;
+	background-color: white;
+	box-shadow: 0 0 5px 0 rgba(0,0,0,0.35);
+	padding: 32px;
+	margin: auto;
+}
+
+div#content > h1{
+	font-family: 'product';
+	font-weight: 500;
+	border-bottom: #D52956 1px solid;
+	margin-bottom: 16px;
+}
+
+#banner-preview{
+	width: 512px;
+	height: auto;
+	display: block;
+	margin: auto;
+	margin-bottom: 32px;
+}
+
+#banner-preview + form textarea{
+	resize: none;
+	border: 1px solid #666;
+	border-radius: 8px;
+	font-family: monospace;
+	font-size: 1.25em;
+	width: 100%;
+	padding: 4px;
+	line-height: 2;
+	margin-top: 32px;
+}
+
+#banner-preview + form input[type='submit']{
+	background: #D52956;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  cursor: pointer;
+	font-size: 1.5em;
+	padding: 12px;
+	margin: auto;
+	line-height: 1.2;
+	margin-bottom: 10px;
+	margin-top: 32px;
+}
+
+table{
+	border: 0;
+	width: 100%;
+	border-spacing: 0;
+	text-align: left;
+}
+#ccs-edit-table th{ color: white; }
+table#ccs-edit-table tr:first-of-type{
+	background-color: #333;
+	color: white;
+}
+table td, table th{
+	padding: 10px;
+	font-size: .8em;
+}
+#ccs-edit-table td{
+	height: 4em;
+}
+#ccs-edit-table tr > td:last-child{
+	font-size: 1.5em;
+	text-align: center;
+}
+
+#ccs-edit-table tr:nth-of-type(odd){
+	background-color: #EEE;
+}
+
+#users-table tr:not(:first-child):hover{
+	background-color: #EEE;
+}
+
+canvas{
+	margin: 32px 0;
+}
+
+#editform{
+	margin: 32px 0;
+	padding: 32px 0;
+	border-top: 2px solid #EEE;
+	border-bottom: 2px solid #EEE;
+}
+#editform input:read-only{
+	border: none;
+	background: none;
+	font-size: 1.3em;
+	width: 49%;
+}
+textarea{
+	margin-top: 16px;
+	margin-bottom: 16px;
+	resize: none;
+	border: none;
+	border-bottom: 1px solid #AAA;
+	height: 5em;
+	font-size: 1.1em;
+	width: 100%;
+	padding: 4px;
+}
+#editform input[type='submit']{
+	background: none;
+	border: 2px solid #D52956;
+	padding: 4px 16px;
+	border-radius: 8px;
+	font-size: 1.2em;
+	float: right;
+}
+#editform input[type='submit']:disabled{
+	border: 2px solid #333;
+}

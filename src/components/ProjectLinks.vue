@@ -1,9 +1,9 @@
 <template>
 	<div id="links">
-		<a v-if="code" href="" class="btn code">
+		<a v-if="code" :href="code" target="_blank" class="btn code">
 			<fa icon="code"></fa>
 			Code</a>
-		<a v-if="view" href="" class="btn view">
+		<a v-if="view" :href="view" target="_blank" class="btn view">
 				<fa icon="external-link-alt"></fa>
 			View</a>
 	</div>

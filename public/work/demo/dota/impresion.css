@@ -1,0 +1,42 @@
+#header > h1{
+  font-size: 36pt;
+  font-family: 'Bitter', 'Georgia', serif;
+  text-align: center;
+  line-height: 42pt;
+}
+
+#header > ul, #main img, #main > object, #navbar, #footer, #main > #herogrid > ul > li > a > img, #itemgrid > ul > li > img{
+  display: none;
+}
+
+#main > #herogrid > ul > li > a > span, #main > #herogrid > ul > li > ol{
+  display: block;
+}
+
+#main{
+  width: 100%;
+}
+
+#main h2, #main h3{
+  color: black;
+}
+
+#main p{
+  font-size: 14pt;
+}
+
+#itemgrid > ul > li{
+  display: block;
+  width: 100%;
+  position: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+#itemgrid > ul > li > div{
+  display: block;
+  width: 100%;
+  font-size: 14pt;
+  position: inherit;
+  border: none;
+}
