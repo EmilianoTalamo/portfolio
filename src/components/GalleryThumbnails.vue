@@ -1,14 +1,5 @@
 <template>
 	<aside>
-		<!-- <gallery :images="images" :index="index" @close="index = null"></gallery>
-		<div class="thumbnails-container">
-			<div
-				v-for="(image, imageIndex) in images"
-				:key="imageIndex"
-				@click="index = imageIndex"
-				:style="{ backgroundImage: 'url(' + image + ')' }"
-			></div>
-		</div> -->
 		<Flickity class="flickity carousel" ref="flickity" :options="flickityOptions">
 			<div class="carousel-cell" v-for="(image, imageIndex) in images"
 				:key="imageIndex">
