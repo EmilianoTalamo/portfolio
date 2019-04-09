@@ -1,5 +1,5 @@
 <template>
-<body id="vue-bootstrap" :style="{ overflowY: scrollStatus }">
+<body id="vue-bootstrap" :class="{ modalOnScreen: modalOnScreen }">
 	<transition name="loadingAnimation">
 		<LoadingOverlay v-if="isLoading"></LoadingOverlay>
 	</transition>
@@ -34,7 +34,7 @@ export default {
 		return {
 			isLoading: true,
 			projects: json.projects, // Format the imported JSON for proper usage
-			scrollStatus: "auto" // overflow-y style of the body element. Locked whenever a project is shown
+			modalOnScreen: false // overflow-y style of the body element. Locked whenever a project is shown
 		};
 	},
 	computed: {
@@ -50,8 +50,8 @@ export default {
 	methods: {
 		// In this method, you pass the currentProject property, and it will lock the body scroll depending if it is false (not shown / invalid)
 		lockScroll(modal) {
-			if (!modal) this.scrollStatus = "auto";
-			else this.scrollStatus = "hidden";
+			if (!modal) this.modalOnScreen = false;
+			else this.modalOnScreen = true;
 		}
 	},
 	mounted() {

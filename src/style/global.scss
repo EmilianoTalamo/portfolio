@@ -12,10 +12,11 @@
 }
 
 html{ box-sizing: border-box; 
-	body{ 
+	body, #vue-bootstrap{ 
 		font-family: sans-serif;
 		color: $blackText;
 		@include roboto(400);
+		position: relative;
 	}
 }
 
@@ -26,6 +27,12 @@ a{
 }
 
 button:hover{ cursor: pointer; }
+
+.modalOnScreen{
+	overflow: hidden;
+	-webkit-overflow-scrolling: auto;
+	position: relative;
+}
 
 .btn{
 	color: white;
