@@ -2,7 +2,7 @@
 	<!-- Avoid rendering the window if the URL parameter is incorrect -->
 	<article v-if="currentProject">
 		<!-- Close button -->
-		<router-link :to="{ path: '/' }" id="close">×</router-link>
+			<router-link :to="{ path: '/' }" id="close">×</router-link>
 		<div id="content">
 			<!-- Project title -->
 			<h1>{{ currentProject.title }}</h1>
@@ -16,7 +16,9 @@
 			</div>
 			<ProjectLinks :code="currentProject.code" :view="currentProject.view"></ProjectLinks>
 			<!-- Gallery component -->
-			<GalleryThumbnails :currentProject="currentProject" v-if="currentProject.ssqt > 0"></GalleryThumbnails>
+			<transition name="galleryAnim">
+				<GalleryThumbnails :currentProject="currentProject" v-if="currentProject.ssqt > 0"></GalleryThumbnails>
+			</transition>
 		</div>
 	</article>
 </template>
@@ -40,15 +42,12 @@ export default {
 
 <style lang="scss" scoped>
 @import "../style/project.scss";
-</style>
 
-<style scoped>
-	.image {
-		float: left;
-		background-size: cover;
-		background-repeat: no-repeat;
-		background-position: center center;
-		border: 1px solid #ebebeb;
-		margin: 5px;
-	}
-</style> 
+.galleryAnim-leave-active {
+	transition: opacity 16ms ease-out;
+}
+
+.galleryAnim-leave-to {
+	opacity: 0;
+}
+</style>

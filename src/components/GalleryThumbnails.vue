@@ -1,12 +1,13 @@
 <template>
 	<aside>
+		<hr>
+		<div id="fade"></div>
 		<Flickity class="flickity carousel" ref="flickity" :options="flickityOptions">
 			<div class="carousel-cell" v-for="(image, imageIndex) in images"
 				:key="imageIndex">
 					<img class="carousel-cell-image" :data-flickity-lazyload="image" :alt="currentProject.title" />
 				</div>
 		</Flickity>
-
 	</aside>
 </template>
 

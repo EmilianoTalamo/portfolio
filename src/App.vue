@@ -6,9 +6,9 @@
 	<!-- Header component (title, bio, links...) -->
 	<Header></Header>
 	<!-- Projects list -->
-	<Projects :projects="projects"></Projects>
+		<Projects :projects="projects"></Projects>
 	<!-- Project info window -->
-	<transition name="articleAnimation">
+	<transition name="articleAnimation" mode="in-out">
 		<router-view :currentProject="currentProject"></router-view>
 	</transition>
 </body>
@@ -82,11 +82,13 @@ export default {
 
 // Animations
 .articleAnimation-enter-active,
-.articleAnimation-leave-active {
+.articleAnimation-leave-active 
+{
 	transition: opacity 250ms ease-out, transform 200ms ease-out;
 }
 .articleAnimation-enter,
-.articleAnimation-leave-to {
+.articleAnimation-leave-to 
+{
 	transform: translateY(2vh);
 	opacity: 0;
 }
