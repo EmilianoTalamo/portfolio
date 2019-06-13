@@ -8,7 +8,7 @@
 	<!-- Projects list -->
 		<Projects :projects="projects"></Projects>
 	<!-- Project info window -->
-	<transition name="articleAnimation" mode="in-out">
+	<transition name="articleAnimation" mode="out-in">
 		<router-view :currentProject="currentProject"></router-view>
 	</transition>
 </body>
@@ -19,8 +19,6 @@ import LoadingOverlay from './components/LoadingOverlay'
 import Header from "./components/Header"
 import Projects from "./components/Projects"
 import ProjectView from "./components/ProjectView"
-
-import json from "@/projects.json"; // JSON with all the data
 
 export default {
 	name: "app",
@@ -33,7 +31,7 @@ export default {
 	data() {
 		return {
 			isLoading: true,
-			projects: json.projects, // Format the imported JSON for proper usage
+			projects: [], // Format the imported JSON for proper usage
 			modalOnScreen: false // overflow-y style of the body element. Locked whenever a project is shown
 		};
 	},
@@ -53,6 +51,13 @@ export default {
 			if (!modal) this.modalOnScreen = false;
 			else this.modalOnScreen = true;
 		}
+	},
+	beforeCreate() {
+		// Fetch projects json
+		fetch(`${process.env.BASE_URL}projects.json`)
+		.then(response => response.json())
+		.then(data => this.projects = data)
+		.catch(err => console.log(err))
 	},
 	mounted() {
 		// This runs the lock scroll method at the launch of the page, so it can determinate whether is already a project on screen or not
