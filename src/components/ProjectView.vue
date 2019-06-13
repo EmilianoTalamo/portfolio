@@ -1,6 +1,6 @@
 <template>
 	<!-- Avoid rendering the window if the URL parameter is incorrect -->
-	<article v-if="currentProject">
+	<article v-if="currentProject" class="Project" data-simplebar>
 		<!-- Close button -->
 			<router-link :to="{ path: '/' }" id="close">×</router-link>
 		<div id="content">
@@ -10,27 +10,32 @@
 			<ul id="tech">
 				<li v-for="item in currentProject.tech" :key="item.tech">{{ item }}</li>
 			</ul>
+			<!-- Image -->
+			<img :src="`${publicPath}assets/gallery/${currentProject.folder}.jpg`" alt="">
 			<!-- Info -->
 			<div id="info">
 				<p v-for="(paragraph, index) in formattedInfo" :key="index">{{paragraph}}</p>
 			</div>
 			<ProjectLinks :code="currentProject.code" :view="currentProject.view"></ProjectLinks>
-			<!-- Gallery component -->
-			<transition name="galleryAnim">
-				<GalleryThumbnails :currentProject="currentProject" v-if="currentProject.ssqt > 0"></GalleryThumbnails>
-			</transition>
+			
 		</div>
 	</article>
 </template>
 
 <script>
-import GalleryThumbnails from "../components/GalleryThumbnails"
 import ProjectLinks from "../components/ProjectLinks"
+import 'simplebar'
+import 'simplebar/dist/simplebar.css'
 
 export default {
 	name: "ProjectView",
-	components: { GalleryThumbnails, ProjectLinks },
+	components: { ProjectLinks },
 	props: ["currentProject"],
+	data() {
+		return { 
+			publicPath: process.env.BASE_URL
+		}
+	},
 	computed: {
 		// This splits the paragraphs of the info into an array
 		formattedInfo() {

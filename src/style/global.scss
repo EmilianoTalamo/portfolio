@@ -32,6 +32,10 @@ button:hover{ cursor: pointer; }
 	overflow: hidden;
 	-webkit-overflow-scrolling: auto;
 	position: relative;
+
+	@include mediaDesktop {
+		overflow: auto;
+	}
 }
 
 .btn{

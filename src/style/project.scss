@@ -1,5 +1,7 @@
 @import './_config.scss';
 
+
+
 article{
 	@include fullScreen;
 	height: 100%;
@@ -10,6 +12,12 @@ article{
 	overflow-x: hidden;
 	transform-origin: right top;
 	-webkit-overflow-scrolling: touch;
+
+	@include mediaDesktop {
+		width: 50vw;
+		left: initial;
+		right: 0;
+	}
 
 	#close{
 		position: fixed;
@@ -28,11 +36,12 @@ article{
 		}
 
 		@include mediaDesktop {
-			font-size: 64px;
-			padding: 32px 48px 16px 16px;
-			&:hover{
-				color: black;
-			}
+			// font-size: 64px;
+			// padding: 32px 48px 16px 16px;
+			// &:hover{
+			// 	color: black;
+			// }
+			display: none;
 		}
 	}
 }
@@ -43,9 +52,11 @@ article{
 	padding: 4rem 12vw 6rem;
 
 	@include mediaDesktop {
-		padding: $whitespace 20vw;
+		padding: $whitespace 64px;
 	}
-
+	& > *:last-child{
+		margin-bottom: 6rem;
+	}
 	h1{
 		line-height: 1;
 		font-family: $oswald;
@@ -72,12 +83,31 @@ article{
 		flex-wrap: wrap;
 		@include mobileMargin('bottom');
 
+		@include mediaTablet {
+			font-size: 1rem;
+		}
+
 		@include mediaDesktop {
 			@include desktopMargin('bottom');
 		}
 
 		li{
 			margin-right: 12px;
+		}
+	}
+
+	& > img{
+		width: 100%;
+		height: auto;
+		display: block;
+		margin: auto;
+		line-height: 1;
+		@include mobileMargin('bottom');
+
+		@include mediaDesktop {
+			width: 86%;
+			@include desktopMargin('bottom');
+			box-sizing: border-box;
 		}
 	}
 
