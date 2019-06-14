@@ -18,7 +18,7 @@ export default {
 	name: "Projects",
 	props: ["projects"]
 };
-</script>s
+</script>
 
 <style lang="scss" scoped>
 @import "../style/projects.scss";

@@ -101,7 +101,7 @@ article{
 		height: auto;
 		display: block;
 		margin: auto;
-		line-height: 1;
+		line-height: 0;
 		@include mobileMargin('bottom');
 
 		@include mediaDesktop {
