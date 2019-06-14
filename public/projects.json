@@ -30,14 +30,24 @@
 		"view" : false
 	},
 	{
-		"title" : "Turistic Brochure Design",
-		"color" : "#4CAF50",
-		"tech" : ["InDesign", "Illustrator", "Photoshop"],
-		"info" : "A simple turistic brochure of my hometown that I had to design for Graphic Design class.",
-		"folder" : "si-brochure",
-		"ssqt" : 4,
-		"code" : false,
-		"view" : false
+		"title" : "Dota XHTML-Strict Web",
+		"color" : "#795548",
+		"tech" : ["XHTML", "CSS", "PHP"],
+		"info" : "College project of my first year of web development. This is my first fully functional complex web ever made.\nThe webpage is purely informative, with a structure similar of a blog, and is written in XHTML-Strict, validated by W3C.\nThe markup used is totally accesible, using semantic HTML to help screenreader users to understand the contents meaning. The document's structure do not depend on JavaScript or CSS to make sense, so it still can be navigable without relying on these.\nSome extra stuff that this web has are the support of a print stylesheet, and all the icons are laid in a single image as a sprite for resource optimizations.\nThere's also a section with a third party gallery, and another one that includes a form that saves the data inputted by the user to the server, using PHP.",
+		"folder" : "dota",
+		"ssqt" : 2,
+		"code" : "https://github.com/EmilianoTalamo/portfolio/tree/master/docs/work/demo/dota",
+		"view" : "./work/demo/dota/"
+	},
+	{
+		"title" : "Flexbox Helper",
+		"color" : "#B71C1C",
+		"tech" : ["HTML", "CSS", "JavaScript"],
+		"info" : "I made this webpage on my freetime on my first year of learning web development.\nI created it so it was simpler for me to learn and use CSS Flexbox easily, since it was a new thing for the time.\nIt may have some missing features, but it helped me a lot, and sometimes it still does.",
+		"folder" : "flexboxhelper",
+		"ssqt" : 1,
+		"code" : "https://github.com/EmilianoTalamo/flexboxhelper",
+		"view" : "https://emilianotalamo.github.io/flexboxhelper"
 	},
 	{
 		"title" : "Les Luthiers PHP-Template Based Web",
@@ -70,35 +80,35 @@
 		"view" : "./work/demo/dvstore/"
 	},
 	{
-		"title" : "Music Festival Poster Design",
-		"color" : "#607D8B",
-		"tech" : ["Illustrator"],
-		"info" : "A fictional music festival poster drawn by me in Adobe Illustrator.",
-		"folder" : "lineup",
-		"ssqt" : 4,
-		"code" : false,
-		"view" : "https://www.behance.net/gallery/69926823/Nekromantia-Festivaali"
-	},
-	{
 		"title" : "SF Telegram Bot",
 		"color" : "#009688",
 		"tech" : ["NodeJS", "Telegram API", "Heroku", "Git"],
 		"info" : "A Telegram Bot that I coded during my free time to remind me and my colleagues of our exams and assignment due dates with a single command.",
 		"folder" : "sergiobot",
 		"ssqt" : 2,
-		"code" : false,
+		"code" : "https://github.com/EmilianoTalamo/telegram-bot-node-and-heroku",
 		"view" : false
 	},
 	{
-		"title" : "Flexbox Helper",
-		"color" : "#B71C1C",
-		"tech" : ["HTML", "CSS", "JavaScript"],
-		"info" : "I made this webpage on my freetime on my first year of learning web development.\nI created it so it was simpler for me to learn and use CSS Flexbox easily, since it was a new thing for the time.\nIt may have some missing features, but it helped me a lot, and sometimes it still does.",
-		"folder" : "flexboxhelper",
-		"ssqt" : 1,
-		"code" : "https://github.com/EmilianoTalamo/flexboxhelper",
-		"view" : "https://emilianotalamo.github.io/flexboxhelper"
+		"title" : "Tweetdrafter App",
+		"color" : "#1E88E5",
+		"tech" : ["jQuery", "Cordova", "jQuery Mobile", "HTML", "CSS", "Illustrator", "Sketch"],
+		"info" : "Tweetdrafter is a very simple app that allows you to write drafts for tweets. On the surface it looks like a notes app, but it provides personalized features such as character counter and the ability to send the tweet directly to Twitter.\nEverything, from the design of the logo and the app to the developent of it was  done entirely by me. I used Sketch for the mockup of the interface, Illustrator for the design of the logo and the icons, and jQuery Mobile as the base framework.\nThe following year I remade this app in AngularJS.",
+		"folder" : "td",
+		"ssqt" : 2,
+		"code" : "https://github.com/EmilianoTalamo/tweetdrafter",
+		"view" : false
 	},
+	{
+		"title" : "Turistic Brochure Design",
+		"color" : "#4CAF50",
+		"tech" : ["InDesign", "Illustrator", "Photoshop"],
+		"info" : "A simple turistic brochure of my hometown that I had to design for Graphic Design class.",
+		"folder" : "si-brochure",
+		"ssqt" : 4,
+		"code" : false,
+		"view" : false
+	},	
 	{
 		"title" : "San Isidro Web Mockup",
 		"color" : "#3F51B5",
@@ -121,23 +131,13 @@
 		"view" : "https://www.behance.net/gallery/69927033/2B"
 	},
 	{
-		"title" : "Tweetdrafter App",
-		"color" : "#1E88E5",
-		"tech" : ["jQuery", "Cordova", "jQuery Mobile", "HTML", "CSS", "Illustrator", "Sketch"],
-		"info" : "Tweetdrafter is a very simple app that allows you to write drafts for tweets. On the surface it looks like a notes app, but it provides personalized features such as character counter and the ability to send the tweet directly to Twitter.\nEverything, from the design of the logo and the app to the developent of it was  done entirely by me. I used Sketch for the mockup of the interface, Illustrator for the design of the logo and the icons, and jQuery Mobile as the base framework.\nThe following year I remade this app in AngularJS.",
-		"folder" : "td",
-		"ssqt" : 2,
-		"code" : "https://github.com/EmilianoTalamo/tweetdrafter",
-		"view" : false
-	},
-	{
-		"title" : "Dota XHTML-Strict Web",
-		"color" : "#795548",
-		"tech" : ["XHTML", "CSS", "PHP"],
-		"info" : "College project of my first year of web development. This is my first fully functional complex web ever made.\nThe webpage is purely informative, with a structure similar of a blog, and is written in XHTML-Strict, validated by W3C.\nThe markup used is totally accesible, using semantic HTML to help screenreader users to understand the contents meaning. The document's structure do not depend on JavaScript or CSS to make sense, so it still can be navigable without relying on these.\nSome extra stuff that this web has are the support of a print stylesheet, and all the icons are laid in a single image as a sprite for resource optimizations.\nThere's also a section with a third party gallery, and another one that includes a form that saves the data inputted by the user to the server, using PHP.",
-		"folder" : "dota",
-		"ssqt" : 2,
-		"code" : "https://github.com/EmilianoTalamo/portfolio/tree/master/docs/work/demo/dota",
-		"view" : "./work/demo/dota/"
-	}		
+		"title" : "Music Festival Poster Design",
+		"color" : "#607D8B",
+		"tech" : ["Illustrator"],
+		"info" : "A fictional music festival poster drawn by me in Adobe Illustrator.",
+		"folder" : "lineup",
+		"ssqt" : 4,
+		"code" : false,
+		"view" : "https://www.behance.net/gallery/69926823/Nekromantia-Festivaali"
+	}
 ]
