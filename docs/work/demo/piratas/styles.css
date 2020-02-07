@@ -1,0 +1,476 @@
+@font-face {
+  font-family: botonera;
+  src: url('rsc/fonts/dhfstorybrush/dhfstorybrush-webfont.eot');
+  src: url('rsc/fonts/dhfstorybrush/dhfstorybrush-webfont.eot?#iefix') format('embedded-opentype'),
+  url('rsc/fonts/dhfstorybrush/dhfstorybrush-webfont.woff2') format('woff2'),
+  url('rsc/fonts/dhfstorybrush/dhfstorybrush-webfont.woff') format('woff'),
+  url('rsc/fonts/dhfstorybrush/dhfstorybrush-webfont.ttf') format('truetype'),
+  url('rsc/fonts/dhfstorybrush/dhfstorybrush-webfont.svg#dhf_story_brushregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face{
+  font-family: ubuntu;
+  src: url('rsc/fonts/ubuntu/ubuntu-webfont.eot');
+  src: url('rsc/fonts/ubuntu/ubuntu-webfont.eot?#iefix') format('embedded-opentype'),
+  url('rsc/fonts/ubuntu/ubuntu-webfont.woff2') format('woff2'),
+  url('rsc/fonts/ubuntu/ubuntu-webfont.woff') format('woff'),
+  url('rsc/fonts/ubuntu/ubuntu-webfont.ttf') format('truetype'),
+  url('rsc/fonts/ubuntu/ubuntu-webfont.svg#ubunturegular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+li{ /*Sin estilos de listas*/
+  list-style: none;
+}
+
+strong{ /* Sin bold en strongs */
+  font-weight: normal;
+}
+
+em{ /* Sin itálicas en emphasis */
+  font-style: none;
+}
+
+body{ /* Fondo de la web */
+  background-color: #924f85;
+  margin: 0;
+  background-image: url('rsc/bg-opt.gif');
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#header{ /*Ancho total del header */
+  position: fixed;
+  width: 100%;
+  min-width: 1198px;
+  background-color: #a91b1b;
+  background-image: url(rsc/dark-stripes.png);
+  border-bottom: groove 3px #f6b84c;
+  -webkit-box-shadow: -1px 10px 18px 5px #924f85;
+  -moz-box-shadow: -1px 10px 18px 5px #924f85;
+  box-shadow: -1px 10px 18px 5px #924f85;
+  z-index: 1;
+}
+
+#header:hover{ /* Header que se enciende de forma muy molesta */
+  background-color: red;
+}
+
+#header h1{ /*Logo header*/
+  background-image: url(rsc/header-logo.png);
+  line-height: 140px;
+  background-position: center;
+  color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  pointer-events:none;
+}
+
+#header div{ /*Ancho del contenido del header */
+  width: 1000px;
+  margin: auto;
+}
+
+#header div ul{ /*Centrado de la botonera*/
+  text-align: center;
+}
+
+#header div li{ /*Formato de la botonera*/
+  display: inline;
+  padding: 10px 40px;
+  border: 2px solid #f6b84c;
+  border-radius: 40px;
+  margin: 0 20px;
+  font-family: botonera;
+}
+
+#header div li a{ /*Color y formato texto botonera*/
+  color: #f6b84c;
+  text-decoration: none;
+  font-size: 16pt;
+}
+
+#header div li:first-child a:hover{
+  color: #5cf64c;
+}
+
+#header div li:nth-child(2) a:hover{
+  color: #4cf6f4;
+}
+
+#header div li:nth-child(3) a:hover{
+  color: #5c4cf6;
+}
+
+#header div li:last-child a:hover{
+  color: #f64ce4;
+}
+
+#header div ul #current{ /* Botón de la página actual */
+  background-color: #f6b84c;
+  border-style: ridge;
+}
+
+#header div ul #current a{ /*Texto del botón de la página actual */
+  color: #a91b1b;
+}
+
+#rrss{ /* Posición de la barra de redes */
+  position: fixed;
+  right: 2%;
+  top: 240px;
+  z-index: 2;
+}
+
+#rrss > ul > li div{ /* Tamaño de los iconos */
+  width: 86px;
+  height: 86px;
+  transition: transform 2s linear;
+  transform: rotate(0deg);
+}
+
+#rrss > ul li:first-child > div{ /* Iconos */
+  background: url(rsc/rrss/myspace.svg) no-repeat center;
+}
+
+#rrss > ul li:nth-child(2) > div{
+  background: url(rsc/rrss/fotolog.svg) no-repeat center;
+}
+
+#rrss > ul li:last-child > div{
+  background: url(rsc/rrss/irc.svg) no-repeat center;
+}
+
+#rrss ul li p{ /*Texto de redes sociales oculto*/
+  pointer-events:none;
+  display:inline;
+  position:absolute;
+  margin-top: -64px;
+  margin-left: -226px;
+  margin-right: 0;
+  width: 200px;
+  visibility: hidden;
+  background-color: #a91b1b;
+  border: solid 2px #f6b84c;
+  border-radius: 15px;
+  padding: 5px;
+  color: #FFFFFF;
+  text-align: center;
+  opacity:0;
+  transition: transform 200ms linear;
+  transform: scale3d(0,0,0);
+  z-index: 3;
+  font-family: "Comic Sans MS", "Purisa", sans-serif;
+}
+
+#rrss ul li:hover p{ /*Texto de redes sociales visible cuando se hoverea*/
+  visibility: visible;
+  transform:scale3d(1,1,1);
+  opacity: 1;
+}
+
+#rrss > ul > li div:hover{ /*Animación rrss*/
+  transform: rotate(360deg);
+}
+
+#gifs img{ /* gifs con los integrantes de la banda */
+  position: fixed;
+  z-index: 2;
+}
+
+#gifs img:first-child{
+  left: 1%;
+  bottom: 48%;
+}
+
+#gifs img:nth-child(2){
+  left: 1%;
+  bottom: 25%;
+}
+
+#gifs img:nth-child(3){
+  left:1%;
+  bottom: 2%;
+}
+
+#gifs img:nth-child(4){
+  left: 9%;
+  bottom: 10%;
+}
+
+#gifs img:nth-child(5){
+  left: 9%;
+  bottom: 33%;
+}
+
+#gifs img:last-child{
+  left: 9%;
+  bottom: 54%;
+}
+
+#footer{ /*info del tp*/
+  width: 100%;
+  min-width: 1200px;
+  background-image: url(rsc/broken_noise.png);
+  border-top: 2px solid #e5e5e5;
+  border-bottom: 1px solid transparent;
+  position: fixed;
+  z-index: 999;
+}
+
+#footer:hover{ /*Cursor normal en la info del TP porque es el único lugar del sitio donde hay cordialidad*/
+  cursor: default;
+}
+
+#footer div{ /*Ancho y centrado del contenido del footer*/
+  width: 1200px;
+  margin: auto;
+}
+
+.openmsg, .closemsg{ /*Mensajes para abrir o cerrar el footer*/
+  font-family: ubuntu;
+  color: #e5e5e5;
+  text-align: center;
+  font-size: 20px;
+  transition: transform 300ms ease;
+}
+
+.openmsg:hover{
+  transform: translateY(-5px);
+  color: white;
+}
+
+.closemsg:hover{
+  transform: translateY(5px);
+  color: white;
+}
+
+#footer div img{ /*emigod*/
+  margin: 30px;
+  padding: 5px;
+  float: left;
+  transition: box-shadow 5s, transform 2s;
+}
+
+#footer div img:hover{
+  box-shadow: 0px 0px 100px #fff;
+  transform: scale(1.02);
+}
+
+#footer div div{ /*div del texto del footer*/
+  display: inline-block;
+  width: 500px;
+  vertical-align: top;
+  margin-left: 20px;
+}
+
+#footer div div p{ /*Formato del texto del footer*/
+  color: #e5e5e5;
+  font-family: ubuntu;
+  margin-top: 100px;
+  font-size: 26px;
+  line-height: 128%;
+}
+
+#main{ /*Cuerpo principal*/
+  width: 798px;
+  background-color: rgba(246,184,76,0.8);
+  margin: auto;
+  border: solid 1px #f6b84c;
+  border-radius: 100px 0;
+  padding: 240px 20px 60px 20px;
+  z-index: 2;
+}
+
+#main h2{ /* Titulos del cuerpo principal */
+  font-family: "Comic Sans MS", "Purisa", sans-serif;
+  font-size: 40px;
+  line-height: 160%;
+  background-color: #70AA61;
+  margin: 30px -21px;
+  padding-left: 40px;
+}
+
+#main p{ /* Texto del cuerpo principal */
+  font-family: helvetica;
+  font-size: 3ex;
+  line-height: 130%;
+}
+
+/* Home ----------------------------------*/
+
+.video{ /* Video de presentación */
+  float: right;
+  margin: -10px 10px 10px 10px;
+  display: inline-block;
+}
+
+.integrantes li{ /* Integrantes de la banda */
+  width: 200px;
+	display: inline-block;
+	padding: 16px;
+	font-family: Impact;
+  font-size: 2em;
+  text-align: center;
+  vertical-align: top;
+}
+
+.integrantes li div img{ /*Fotos de los integrantes */
+  display: block;
+  transition: filter 100s linear;
+  z-index: 0;
+}
+
+.integrantes li:nth-child(odd) div img:hover{
+  filter: hue-rotate(50000deg);
+}
+
+.integrantes li:nth-child(even) div img:hover{
+  filter: hue-rotate(-10000deg);
+}
+
+/* discos ----------------------------------*/
+
+#uno, #dos, #tres, #cuatro, #cinco, #seis, #siete{ /* Titulos discos */
+  font-family: Arial;
+  font-size: 3ex;
+  margin: 0;
+  padding-left: 40px;
+  background: url(rsc/discos/icon.gif) left bottom no-repeat;
+  line-height: 32px;
+  text-decoration: none;
+}
+
+#anclas{ /* Formato caja de anclas */
+  text-align: center;
+  font-family: Verdana;
+  font-size: 18pt;
+  line-height: 26pt;
+}
+
+#anclas li a{ /* Sin decoración de links de las anclas */
+  color: black;
+  text-decoration: none;
+}
+
+#anclas li a:hover{ /* Se subrayan las anclas al pasarles el mouse */
+  text-decoration: underline;
+}
+
+:target:before { /* offset de las anclas para ajustarse al header fijo */
+content: "";
+display: block;
+height: 245px;
+margin: -245px 0 0;
+}
+
+.caratula{ /* Carátulas de discos */
+  display: inline-block;
+  margin-bottom: 45px;
+}
+
+.lista ol li{ /* Numeración de la lista de temas */
+  list-style: decimal-leading-zero;
+}
+
+.lista{ /* Formato de la lista de temas */
+  display: inline-block;
+  width: 500px;
+  vertical-align: top;
+  font-family: monospace;
+  font-size: 14pt;
+  line-height: 18pt;
+  margin-left: 32px;
+}
+
+.lista ol{
+  margin: 0;
+  margin-bottom: 32px;
+}
+
+.lista ol li{
+  padding-left: 6px;
+}
+
+.lista ol li:nth-of-type(odd){
+  background-color: #8481cc;
+}
+
+.lista ol li:nth-of-type(even){
+  background-color: #924f85;
+}
+
+.lista ol li:hover{
+  font-weight: bold;
+  background-color: red;
+}
+
+/* Concurso -----------------------------------*/
+
+.sunga{ /* Foto de Kenny flotando a la derecha */
+  float: right;
+  padding: 5px;
+}
+
+form div span{ /* Todos los textos del formulario con ancho fijo */
+  display: inline-block;
+  width: 250px;
+  vertical-align: top;
+}
+
+form div{ /* Separación de los campos */
+  padding: 5px 0;
+}
+
+form, form div input, form div textarea{ /*Tipografias */
+  font-family: "Comic Sans MS", "Purisa", sans-serif;
+}
+
+input:focus, textarea:focus{ /* Color cuando se para sobre un campo */
+  background-color: yellow;
+  border: 3px dashed red;
+}
+
+input[type=reset]{
+  width: 160px;
+}
+
+#main .disclaimer, #main .disclaimer > small{
+  font-family: arial, sans-serif;
+  text-transform: uppercase;
+  font-size: 8px;
+  line-height: 8px;
+}
+
+/* Noticias ------------------------------------*/
+
+h3{ /* Titulares */
+  font-family: Impact;
+  font-size: 28pt;
+  text-decoration: underline;
+  margin: 0;
+  padding: 0;
+}
+
+.center{ /* Centrar imagenes */
+  margin: auto;
+  display: block;
+}
+
+.fecha{ /* Formato fecha posts */
+  display: block;
+  font-family: arial;
+  font-size: 8pt;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 30px;
+}

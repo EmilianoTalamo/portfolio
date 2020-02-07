@@ -1,0 +1,187 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js" type="text/javascript"></script>
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+  <link rel="shortcut icon" type="image/x-icon" href="rsc/favicon.ico" />
+  <title>Los Fantasmas del Caribe | Concurso</title>
+  <script src="info.js" type="text/javascript"></script>
+</head>
+<body>
+
+  <div id="header">
+    <div>
+      <h1>Los Fantasmas del Caribe</h1>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="info.html">Noticias</a></li>
+        <li><a href="discos.html">Discografía</a></li>
+        <li id="current"><a href="form.html">Concurso</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div id="rrss">
+    <ul>
+      <li><div onclick="window.open('https://myspace.com/losfantasmasdelcaribeorig', '_blank'); return false;"></div><p>Seguinos en <span lang="en">MySpace!</span></p></li>
+      <li><div onclick="window.open('http://fotolog.com/fantasmasdelcaribe.html', '_blank'); return false;"></div><p>Mirá nuestro Fotolog!</p></li>
+      <li><div onclick="window.open('irc://fantasmasdelcaribefans:64/fans?6650123', '_self'); return false;"></div><p>Chateá en el canal de <span lang="en"><acronym title="Internet Relay Chat">IRC</acronym></span>!</p></li>
+    </ul>
+  </div>
+
+  <div id="gifs">
+    <img src="http://emilianotalamo.github.io/proyectos/fantasmas/cosillas/gif1.gif" alt="Tecladista de Fantasmas del Caribe" />
+    <img src="http://emilianotalamo.github.io/proyectos/fantasmas/cosillas/gif2.gif" alt="Cantante de Fantasmas del Caribe" />
+    <img src="http://emilianotalamo.github.io/proyectos/fantasmas/cosillas/gif3.gif" alt="Guitarrista de Fantasmas del Caribe" />
+    <img src="http://emilianotalamo.github.io/proyectos/fantasmas/cosillas/gif4.gif" alt="Percusionista de Fantasmas del Caribe" />
+    <img src="http://emilianotalamo.github.io/proyectos/fantasmas/cosillas/gif5.gif" alt="Baterista de Fantasmas del Caribe" />
+    <img src="http://emilianotalamo.github.io/proyectos/fantasmas/cosillas/gif6.gif" alt="Bajista de Fantasmas del Caribe" />
+  </div>
+
+  <div id="main">
+  <h2>Ganate una noche con José</h2>
+  <img class="sunga" src="rsc/josesexy.jpg" alt="José en sunga" />
+  <p>¡Participá por una cita romántica y una noche con José, nuestro percusionista!</p>
+  <p>Simplemente llená los datos a continuación y subí una foto tuya para entrar en el concurso.</p>
+
+  <form action="index.html" method="post" enctype="multipart/form-data">
+    <div><span>Nombre y apellido:</span><input type="text" name="nya" size="36" /></div>
+
+    <div><span>Edad:</span><select name="edad">
+      <option value="12">12</option>
+      <option value="13">13</option>
+      <option value="14">14</option>
+      <option value="15">15</option>
+      <option value="16">16</option>
+      <option value="17">17</option>
+      <option value="18">18</option>
+      <option value="19">19</option>
+      <option value="20">20</option>
+      <option value="21">21</option>
+      <option value="22">22</option>
+      <option value="23">23</option>
+      <option value="24">24</option>
+      <option value="25">25</option>
+      <option value="26">26</option>
+      <option value="27">27</option>
+      <option value="28">28</option>
+      <option value="29">29</option>
+      <option value="30">30</option>
+      <option value="31">31</option>
+      <option value="32">32</option>
+      <option value="33">33</option>
+      <option value="34">34</option>
+      <option value="35">35</option>
+      <option value="36">36</option>
+      <option value="37">37</option>
+      <option value="38">38</option>
+      <option value="39">39</option>
+      <option value="40">40</option>
+      <option value="41">41</option>
+      <option value="42">42</option>
+      <option value="43">43</option>
+      <option value="44">44</option>
+      <option value="45">45</option>
+      <option value="46">46</option>
+      <option value="47">47</option>
+      <option value="48">48</option>
+    </select>
+    </div>
+
+    <div><span>Teléfono/<abbr title="Facsímil">FAX</abbr>:</span><input type="text" name="tel" size="14" /></div>
+
+    <div><span>Peso:</span><input type="text" name="peso" size="2" /><abbr title="Kilogramos">kg</abbr></div>
+
+    <div><span>Contanos algo sobre vos:</span><textarea name="mensaje" rows="5" cols="38"></textarea></div>
+
+    <div><span>No cuento con documentos</span><input checked="checked" id="nodni" type="checkbox" name="dni" value="sindni" /></div>
+
+    <div><span>Número de <acronym title="Documento Nacional de Identidad">DNI</acronym>:</span><input id="sidni" type="text" name="dni" disabled="disabled" /></div>
+
+    <div><span>Subí tu foto más linda ;)</span><input type="file" accept="image/*" name="foto" /></div>
+
+    <div><input type="reset" value="Borrar todo" onclick="$('#sidni').attr('disabled', 'disabled');" /> <input type="submit" value="Participar" /></div>
+
+  </form>
+
+  <p class="disclaimer"><small>El presente Concurso tendrá vigencia desde el día 17 de mayo de 2006 hasta el día 16 de junio de 2006, a las 17 <abbr title="Horas">hs.</abbr>, fecha en la cual se realizará el Sorteo, según se lo define más adelante. Pueden participar del presente Concurso (en adelante, los "Participantes") todas aquellas personas mayores de 12 años, residentes de América Latina. Todos los campos son requeridos excepto "Número de documento", en caso de no poseer uno, tildar la opción "No cuento con documentos". El ganador no podrá exigir el cambio del Premio por otro, ni por su valor en dinero en efectivo, ni por un bien o servicio distinto de los indicados como Premio, de modo que el Premio no será negociable, ni transferible. El plazo para retirar el Premio adjudicado es de 120 días. Para participar del Concurso no existe obligación directa ni indirecta de compra o contratación de servicio alguno. Los potenciales ganadores del Concurso serán notificados por el Organizador vía teléfono o fax.</small></p>
+
+  </div>
+
+  <div id="footer">
+    <div>
+      <p class="openmsg" onclick="$('#footer').stop().animate({ 'top': 0 }, 1000); $('.openmsg').css('display', 'none');">^ Abrir info del TP ^</p>
+      <p class="closemsg" onclick="$('#footer').stop().animate({ 'bottom': '-635px' }, 1000); $('#footer').css('top', ''); $('.openmsg').css('display', 'block');">v Cerrar info del TP v</p>
+      <img onclick="audio.play('rsc/avemaria.mp3')" src="rsc/emigod.jpg" alt="Emigod" />
+      <div>
+        <p>Este sitio (puramente de fantasía) es un trabajo práctico que fue hecho por Guido Emiliano Tálamo, alumno de la Escuela Da Vinci, para la materia Maquetado y Desarrollo Web del segundo cuatrimestre del año 2016, a cargo del profesor <span onclick="$('body').css('cursor', 'url(rsc/cursor/7.png), default'); cursornormal = 'url(rsc/cursor/7.png), default'; cursorclick = 'url(rsc/cursor/7.png), default'; $('a').css('cursor', 'url(rsc/cursor/7l.png), default');">Germán Rodriguez</span>.</p>
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript">
+    $('#nodni').change(function(){
+    $('#sidni').attr('disabled',this.checked)
+    $('#sidni').attr('enabled',!this.checked)
+    });
+  </script>
+
+  <script type="text/javascript">
+
+  var cursornormal;
+  var cursorclick;
+  var rand = Math.floor((Math.random()*6)+1);
+    switch(rand){
+      case 1:
+      cursornormal = "url('rsc/cursor/1.png'), default";
+      cursorclick = "url('rsc/cursor/1c.png'), default";
+      $('body').css('cursor', cursornormal);
+      $('a').css('cursor', "url('rsc/cursor/1l.png'), default");
+      break;
+      case 2:
+      cursornormal = "url('rsc/cursor/2.png'), default";
+      cursorclick = "url('rsc/cursor/2c.png'), default";
+      $('body').css('cursor', cursornormal);
+      $('a').css('cursor', "url('rsc/cursor/2l.png'), default");
+      break;
+      case 3:
+      cursornormal = "url('rsc/cursor/3.png'), default";
+      cursorclick = "url('rsc/cursor/3c.png'), default";
+      $('body').css('cursor', cursornormal);
+      $('a').css('cursor', "url('rsc/cursor/3l.png'), default");
+      break;
+      case 4:
+      cursornormal = "url('rsc/cursor/4.png'), default";
+      cursorclick = "url('rsc/cursor/4c.png'), default";
+      $('body').css('cursor', cursornormal);
+      $('a').css('cursor', "url('rsc/cursor/4l.png'), default");
+      break;
+      case 5:
+      cursornormal = "url('rsc/cursor/5.png'), default";
+      cursorclick = "url('rsc/cursor/5c.png'), default";
+      $('body').css('cursor', cursornormal);
+      $('a').css('cursor', "url('rsc/cursor/5l.png'), default");
+      break;
+      case 6:
+      cursornormal = "url('rsc/cursor/6.png'), default";
+      cursorclick = "url('rsc/cursor/6c.png'), default";
+      $('body').css('cursor', cursornormal);
+      $('a').css('cursor', "url('rsc/cursor/6l.png'), default");
+      break;
+    }
+    var fncursornormal = function () {
+      $(this).css('cursor', cursornormal)
+    }
+    var fncursorclick = function () {
+    $(this).css('cursor', cursorclick)
+    }
+
+    $('body').on('mousedown', fncursorclick)
+    $('a').on('mousedown', fncursorclick)
+    $('body').on('mouseup', fncursornormal)
+    $('a').on('mouseup', fncursornormal)
+  </script>
+
+</body>
+</html>
