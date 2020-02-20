@@ -1,0 +1,685 @@
+@font-face{
+	font-family: istok;
+	src: url('rsc/fonts/istok_web/istok-regular.ttf');
+	font-weight: normal;
+}
+
+@font-face{
+	font-family: istok;
+	src: url('rsc/fonts/istok_web/istok-bold.ttf');
+	font-weight: bold;
+}
+
+@font-face{
+	font-family: lora;
+	src: url('rsc/fonts/lora/lora-regular.ttf');
+	font-weight: normal;
+}
+
+@font-face{
+	font-family: lora;
+	src: url('rsc/fonts/lora/lora-bold.ttf');
+	font-weight: bold;
+}
+
+@font-face{
+	font-family: lora;
+	src: url('rsc/fonts/lora/lora-italic.ttf');
+	font-style: italic;
+}
+
+@font-face{
+	font-family: lora;
+	src: url('rsc/fonts/lora/lora-bolditalic.ttf');
+	font-weight: bold;
+	font-style: italic;
+}
+
+@font-face{
+	font-family: segoe;
+	src: url('rsc/fonts/segoeui.ttf');
+	font-weight: normal;
+}
+
+*{padding: 0; margin: 0; font-family: sans-serif; box-sizing: border-box; list-style: none; text-rendering: optimizeLegibility; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;}
+
+*::selection{
+	background-color: #EC008C;
+	color: white;
+}
+
+*::-moz-selection{
+	background-color: #EC008C;
+	color: white;
+}
+
+body{
+	background: #fafafa;
+	overflow-x: hidden;
+}
+
+header{
+	background: #fafafa;
+	position: relative;
+	width: 100%;
+	height: 5em;
+	z-index: 999;
+	top: 0;
+	transition: top 0.2s ease-in-out;
+}
+
+header > h1{
+	height: 3em;
+	width: 100%;
+	color: transparent;
+	text-align: center;
+	background-image: url('rsc/logo.svg');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 6em;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+#🍔{
+	background: url('rsc/assets/menu.svg');
+	display: inline-block;
+	width: 3.5em;
+	height: 3.5em;
+	position: absolute;
+	top: 1em;
+	left: 0.5em;
+}
+
+nav{
+	position: fixed;
+	top: 0;
+	left: -80vw;
+	right: 0;
+	width: 80vw;
+	height: 100vh;
+	background: #fafafa;
+	border-right: 1px solid #f3f3f3;
+	box-shadow: 0 2px 3px rgba(0,0,0,0.017);
+	transition: left 500ms ease-in;
+	background: url(rsc/logo-min.svg) center 2em no-repeat;
+	background-size: 50% auto;
+	background-color: white;
+	z-index: 1;
+}
+
+nav ul{
+	margin-top: 6em;
+}
+
+nav ul li{
+	text-align: center;
+	padding: 1.2em 0;
+	margin: 0 2em;
+	border-bottom: 1px solid rgba(0,0,0,0.17);
+}
+
+nav ul li:last-child{
+	border-bottom: none;
+}
+
+nav ul li a{
+	font-size: 1.1em;
+	font-family: segoe, Verdana, Geneva, sans-serif;
+	color: rgba(0,0,0,0.8);
+	text-decoration: none;
+	display: block;
+}
+
+#banner{
+	position: relative;
+	width: 100vw;
+	height: 80vh;
+	background: no-repeat center bottom url('rsc/banner-girls.png');
+	background-size: auto 50vh;
+	background-color: #fafafa;
+	box-shadow: 0 2px 3px rgba(0,0,0,0.17);
+}
+
+#banner h2{
+	font-family: istok, Helvetica, Arial, sans-serif;
+	font-size: 1.8em;
+	font-weight: normal;
+	line-height: 110%;
+	position: absolute;
+	text-align: center;
+	top: 4%;
+	left: 0;
+	color: rgba(0,0,0,0.8);
+	padding: 0 1em;
+}
+
+p{
+	font-family: lora, "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size: 1.33em;
+	color: rgba(0,0,0,0.8);
+	margin-bottom: 0.3em;
+	line-height: 130%;
+}
+
+.pbold{
+	font-family: lora, "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-weight: bold;
+}
+
+figure{
+	margin: 0.6em 0;
+}
+
+figure img{
+	border: 1px solid rgba(0,0,0,.44);
+	width: 100%;
+	height: auto;
+}
+
+figcaption{
+	font-family: segoe, Verdana, Geneva, sans-serif;
+	font-size: 0.8em;
+	color: rgba(0,0,0,.44);
+	text-align: center;
+}
+
+section{
+	margin-top: 1em;
+	padding: 0 1.2em;
+}
+
+section h1, section h2{
+	color: #0099ff;
+	font-family: istok, Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	font-size: 2.5em;
+	line-height: 100%;
+	margin-top: 0.66em;
+	margin-bottom: 0.25em;
+	letter-spacing: -0.03em;
+}
+
+section article ul{
+	margin: 0 0 0 2em;
+}
+
+section article ul li{
+	list-style: disc;
+}
+
+#mujeres h2{
+	margin: 1.3em 0 1em 0;
+}
+
+#mujeres ul{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+#mujeres ul li{
+	margin: 1em;
+}
+
+#mujeres ul li img{
+	display: block;
+	margin: auto;
+	border-radius: 50%;
+	width: 50vw;
+	height: auto;
+}
+
+#mujeres ul li h3{
+	font-family: segoe, Verdana, Geneva, sans-serif;
+	font-size: 2em;
+	text-align: center;
+	line-height: 110%;
+	margin: 0.33em 0;
+}
+
+#mujeres ul li > p:first-of-type{
+	font-family: segoe, Verdana, Geneva, sans-serif;
+	color: rgba(0,0,0,0.8);
+	text-align: center;
+}
+
+#mujeres ul li > p:last-of-type{
+	font-family: segoe, Verdana, Geneva, sans-serif;
+	font-size: 1em;
+	text-align: center;
+	color: rgba(0,0,0,0.6);
+}
+
+aside{
+	background-color: #EC008C;
+	color: white;
+	padding: 1.2em;
+}
+
+aside h2{
+	font-size: 2.5em;
+	margin-bottom: 0.33em;
+	text-align: center;
+}
+
+form input, form textarea{
+	padding: 0.33em;
+	font-family: segoe, Verdana, Geneva, sans-serif;
+	width: 100%;
+	font-size: 1.33em;
+	background: none;
+	border: none;
+	border-bottom: 2px solid white;
+	border-top: none;
+	margin-bottom: 1em;
+	outline: none;
+	color: white;
+	font-weight: bold;
+}
+
+form input{
+	padding-right: 3em;
+}
+
+form div{
+	position: relative;
+}
+
+form textarea{
+	border: 2px solid white;
+	height: 6em;
+	resize: none;
+}
+
+form input:focus, form textarea:focus{
+	transition: border-color 200ms linear;
+	border-color: #0099FF;
+}
+
+form input::placeholder, form textarea::placeholder{
+	color: #EEEEEE;
+	font-weight: normal;
+}
+
+form input + img{
+	height: 1.33em;
+	width: auto;
+	position: absolute;
+	right: 1em;
+	top: 0.66em;
+	transform: scale(0);
+}
+
+form input:focus:invalid + img{
+	transform: scale(1);
+	transition: transform 100ms ease-out;
+}
+
+input[type="submit"]{
+	border: 2px solid white;
+	background-color: white;
+	color: #EC008C;
+	padding: 0.33em;
+	font-size: 1.66em;
+}
+
+footer{
+	color: white;
+	background-color: #222222;
+	padding: 1.33em;
+}
+
+footer ul:first-of-type li{
+	font-family: istok, Helvetica, Arial, sans-serif;
+	color: #fafafa;
+	font-size: 1.66em;
+	text-align: center;
+	border-bottom: 1px solid rgba(255,255,255,0.4);
+	padding: 0.66em 0;
+	line-height: 110%;
+}
+
+footer ul:first-of-type li:last-of-type{
+	border: none;
+}
+
+footer ul:last-of-type{
+	margin-top: 2em;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	padding: 0 10vw;
+}
+
+footer ul:last-of-type li a{
+	display: inline-block;
+	background-size: contain;
+	opacity: 0.4;
+	width: 18vw;
+	height: 18vw;
+}
+
+footer ul:last-of-type li:nth-child(1) a{
+	background-image: url(rsc/assets/twitter.svg);
+}
+
+footer ul:last-of-type li:nth-child(2) a{
+	background-image: url(rsc/assets/linkedin.svg);
+}
+
+footer ul:last-of-type li:nth-child(3) a{
+	background-image: url(rsc/assets/github.svg);
+}
+
+@media only screen and (min-width:480px) and (max-width:768px) and (orientation: portrait){
+
+	header{
+		height: 8em;
+	}
+
+	header > h1{
+		height: inherit;
+		background-position: center 1em;
+		background-size: 7em;
+	}
+
+	#🍔{
+		width: 5em;
+		height: 5em;
+		top: 2em;
+	}
+
+	nav{
+		width: 60vw;
+		background: url(rsc/logo.svg) center 2em no-repeat;
+		background-size: 50% auto;
+		background-color: white;
+	}
+
+	nav ul{
+		margin-top: 10em;
+	}
+
+	nav ul li a{
+		font-size: 1.5em;
+	}
+
+	#banner{
+		height: 65vh;
+		background-size: 90vh auto;
+		padding: 0;
+	}
+
+	#banner h2{
+		font-size: 2em;
+	}
+
+	section{
+		padding: 0 2em;
+	}
+
+	section h1, section h2{
+		font-size: 3em;
+	}
+
+	p{
+		font-size: 1.5em;
+	}
+
+	figure{
+		margin: 1em 0;
+	}
+
+	figure img{
+		width: 80%;
+		height: auto;
+		margin: auto;
+		display: block;
+	}
+	
+	#mujeres{
+		padding: 0;
+	}
+
+	#mujeres h2{
+		padding: 0 2rem;
+	}
+
+	#mujeres li{
+		width: 35vw;
+	}
+	
+	#mujeres ul li h3{
+		font-size: 1.6em;
+	}
+
+	#mujeres ul li > p:first-of-type{
+		font-size: 1.1em;
+	}
+
+	#mujeres ul li img{
+		width: 30vw;
+	}
+
+	#mujeres ul{
+		flex-wrap: wrap;
+		justify-content: center;
+		margin: auto;
+	}
+
+	aside{
+		padding: 2em;
+	}
+
+	aside h2{
+		font-size: 3.2em;
+	}
+	
+	footer{
+		padding: 2em;
+	}
+	
+	footer ul:first-of-type li{
+		font-size: 2em;
+	}
+
+	footer ul:last-of-type{
+		justify-content: center;
+	}
+
+	footer ul:last-of-type li{
+		padding: 0 2vw;
+	}
+
+	footer ul:last-of-type li a{
+	width: 16vw;
+	height: 16vw;
+	}
+}
+
+@media only screen and (min-width:769px){
+	header{
+		height: initial;
+		background: white;
+		width: 100%;
+	}
+
+	header > h1{
+		background-position: center center;
+		background-size: 6em;
+	}
+	
+	nav{
+		background: white;
+		position: initial;
+		left: initial;
+		border-bottom: 1px solid #f3f3f3;
+		box-shadow: 0 2px 3px rgba(0,0,0,0.017);
+		height: initial;
+		width: 100vw;
+	}
+
+	nav ul{
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+		font-size: 1em;
+		width: 80vw;
+		max-width: 1000px;
+		margin: auto;
+	}
+	
+	nav ul li, nav ul li:last-child{
+		border-bottom: none;
+		padding: 0;
+		margin: 0;
+	}
+	
+	nav ul li a{
+		font-family: istok, Helvetica, Arial, sans-serif;
+		padding: 1em 1em;
+		display: inline-block;
+		min-width: 12em;
+		position: relative;
+	}
+
+	nav > ul > li > a:before{
+		content: "";
+		position: absolute;
+		width: 100%;
+		height: 2px;
+		bottom: 0;
+		left: 0;
+		background-color: #0099FF;
+		visibility: hidden;
+		transform: scaleX(0);
+		transition: all 0.3s ease-in-out 0s;
+	}
+
+	nav > ul > li > a:hover:before{
+	  visibility: visible;
+	  transform: scaleX(1);
+	}
+
+	#🍔{
+		display: none;
+	}
+
+	main{
+		width: 100%;
+		max-width: 1000px;
+		margin: auto;
+	}
+	
+	section{
+		padding: 0 20px;
+	}
+
+	#banner{
+		width: 100%;
+		max-width: 1000px;
+		box-shadow: none;
+		background-size: 100% auto;
+		height: 620px;
+		padding: 0;
+	}
+
+	#banner h2{
+		width: 100%;
+		top: 0;
+		font-size: 2em;
+	}
+	
+	figure{
+		margin: 1em 0;
+	}
+
+	figure img{
+		width: 500px;
+		display: block;
+		margin: auto;
+	}
+	
+	#mujeres h2{
+		margin: 1.3em 0 0;
+	}
+
+	#mujeres ul{
+		justify-content: space-around;
+	}
+
+	#mujeres ul li img{
+		width: 250px;
+		filter: saturate(0.8);
+		transition: transform 100ms ease-out, filter 100ms linear;
+	}
+
+	#mujeres ul li img:hover{
+		transform: scale(1.05);
+		filter: saturate(1);
+		transition: transform 200ms ease-out, filter 200ms linear;
+	}
+
+	#mujeres ul li{
+		width: 250px;
+	}
+
+	aside{
+		width: 500px;
+		margin: 5em auto;
+		box-shadow: 10px 10px 0px 0px rgba(236,0,140,0.25);
+	}
+	
+	input[type="submit"]{
+		transition: background-color 200ms ease-out, color 200ms ease-out;
+	}
+
+	input[type="submit"]:hover{
+		background-color: #0099FF;
+		color: white;
+		transition: background-color 200ms ease-out, color 200ms ease-out;
+		cursor: pointer;
+	}
+	
+	footer{
+		border-top: 1px solid #999999;
+		width: 600px;
+		margin: auto;
+		background-color: #fafafa;
+	}
+
+	footer ul:first-of-type{
+		font-size: 12pt;
+	}
+
+	footer ul:first-of-type li{
+		color: rgba(0,0,0,0.8);
+		font-size: 1.6em;
+		border: none;
+		padding: 4px;
+	}
+
+	footer ul:last-of-type{
+		filter: invert(100);
+		justify-content: center;
+		padding: 0;
+		margin-top: 16px;
+	}
+
+	footer ul:last-of-type li{
+		padding: 0 8px;
+	}
+
+	footer ul:last-of-type li a{
+		width: 48px;
+		height: 48px;
+		cursor: pointer;
+	}
+
+	footer ul:last-of-type li a:hover{
+		opacity: 1;
+	}
+}
