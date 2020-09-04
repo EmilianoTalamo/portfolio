@@ -13,7 +13,7 @@
 		"@fortawesome/free-brands-svg-icons": "^5.8.1",
 		"@fortawesome/free-solid-svg-icons": "^5.8.1",
 		"@fortawesome/vue-fontawesome": "^0.1.6",
-		"node-sass": "^4.11.0",
+		"node-sass": "^4.13.1",
 		"sass-loader": "^7.1.0",
 		"simplebar": "^4.0.0",
 		"vue": "^2.6.10",
